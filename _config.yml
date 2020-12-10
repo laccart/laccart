@@ -1,0 +1,25 @@
+title: Siber Güvenlik Bloğu
+subtitle: Computer Engineer && Ethical Hacker
+description: >- # this means to ignore newlines until "baseurl:"
+  Penetration Tester.
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://kizilcinar.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+author_logo: profile.png
+disqus_shortname: Stormer  #for comments using disqus
+author: Stormer
+author_bio: "Merhaba, benim adım Sedat. Gazi Üniversitesi Bİlgisayar Mühendisliği bölümü mezunuyum.
+Pentester (Sızma Testi Uzmanı) ve Siber Güvenlik Danışmanı (Siber Güvenlik Uzmanı) gibi pozisyonlarda çalıştım. 
+Sızma Testleri, Siber İstihbarat, Sosyal Mühendislik, Zararlı Yazılım Analizi, Adli Analiz gibi alanlarda aktif görev aldım.
+Ayrıca, network güvenliği, sistem güvenliği, veritabanı güvenliği, web güvenliği gibi alanlarda yazılım projeleri geliştirdim.
+Daima kendimi geliştirmeye açık ve birşeyleri başarma konusunda hırslı biriyim. 
+Sanırım, CV verecek kadar kendimi anlattım. İyilikle kalın."
+
+author_email: "sedat@kizilcinar.com"
+author_location: Dünya
+author_website_url: "https://kizilcinar.com"
+
+# social links
+github_username:  laccart
+linkedin_username: SedatKizilcinar
+twitter_username: SedatKizilcinar
