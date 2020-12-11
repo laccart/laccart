@@ -5,7 +5,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://kizilcinar.com" # the base hostname & protocol for your site, e.g. http://example.com
 
-author_logo: profile.png
+author_logo: profile.jpg
 disqus_shortname: laccart  #for comments using disqus
 author: laccart
 author_bio: "Gazi Üniversitesi Bİlgisayar Mühendisliği bölümü mezunuyum.
