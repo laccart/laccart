@@ -103,7 +103,7 @@ Resim7’de, 6 tane DNS çözümleyicisinin IP adresleri publicDns.txt dosyası 
 root@Stormer:~# ./dnsdrdos -f publicDns.txt -s 192.168.30.1 -l 100000000000
 ```
 
-`–f` parametresi ile herkesin erişimine açık olan birkaç DNS çözümleyicisinin IP adresinin olduğu dosya belirtildi. –s parametresi ile ise DNS çözümleyicilerine gönderilecek istek üzerinde kaynak IP manipülasyonu yapılarak 192.168.30.1 IP adresi kaynak IP adresi olarak belirtildi. -l parametresi ile gönderilecek paket sayısı belirtildi.
+**–f** parametresi ile herkesin erişimine açık olan birkaç DNS çözümleyicisinin IP adresinin olduğu dosya belirtildi. –s parametresi ile ise DNS çözümleyicilerine gönderilecek istek üzerinde kaynak IP manipülasyonu yapılarak 192.168.30.1 IP adresi kaynak IP adresi olarak belirtildi. -l parametresi ile gönderilecek paket sayısı belirtildi.
 
  Hedef makine üzerinden ağ trafiğinin izlenmesi sonucunda elde edilen DNS çözümleyicileri yanıtları Resim 8’de yer almaktadır.
 
