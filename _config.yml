@@ -1,4 +1,4 @@
-title: Sedat KIZILÇINAR
+title: Siber Güvenlik Bloğu
 subtitle: Computer Engineer && Ethical Hacker
 description: >- # this means to ignore newlines until "baseurl:"
   Penetration Tester.
@@ -8,7 +8,7 @@ url: "https://kizilcinar.com" # the base hostname & protocol for your site, e.g.
 author_logo: profile.png
 disqus_shortname: laccart  #for comments using disqus
 author: laccart
-author_bio: "Merhaba, benim adım Sedat. Gazi Üniversitesi Bİlgisayar Mühendisliği bölümü mezunuyum.
+author_bio: "Gazi Üniversitesi Bİlgisayar Mühendisliği bölümü mezunuyum.
 Pentester (Sızma Testi Uzmanı) ve Siber Güvenlik Danışmanı (Siber Güvenlik Uzmanı) gibi pozisyonlarda çalıştım. 
 Sızma Testleri, Siber İstihbarat, Sosyal Mühendislik, Zararlı Yazılım Analizi, Adli Analiz gibi alanlarda aktif görev aldım.
 Ayrıca, network güvenliği, sistem güvenliği, veritabanı güvenliği, web güvenliği gibi alanlarda yazılım projeleri geliştirdim.
