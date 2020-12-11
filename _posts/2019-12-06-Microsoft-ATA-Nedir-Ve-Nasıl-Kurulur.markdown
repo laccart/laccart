@@ -4,6 +4,7 @@ date:   2019-12-06 18:40:00
 layout: post
 categories: 
     - network-guvenligi
+    - sistem-guvenligi
 thumbnail: posts/ATA_mimarisi.png
 ---
 
