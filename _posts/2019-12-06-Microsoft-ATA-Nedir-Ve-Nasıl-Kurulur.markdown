@@ -3,7 +3,7 @@ title:  "Microsoft ATA Nedir ve Nasıl Kurulur?"
 date:   2019-12-06 18:40:00
 layout: post
 categories: 
-    - network-guvenligi, sistem-guvenligi
+    - network-guvenligi
 thumbnail: posts/ATA_mimarisi.png
 ---
 
