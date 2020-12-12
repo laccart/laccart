@@ -165,21 +165,24 @@ Kurulum İçin:
 
 **Adım1 :** Öncelikle kurulum dosyası indirilir.
 
+| ![atgr2]({{ site.url }}/assets/img/Nessus/part1/adim1.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
+|:--:|
+| *Resim2 : Kurulum dosyasının indirilmesi* |
+
+
+
+**Adım2 :** Dosya kurulumu başlatılır. Kurulum dosyalarının sisteme yüklenmesinden sonra kurulum web arayüzünde devam eder.
+
 ```linux
 root@Stormer:~# dpkg -i Nessus-7.1.0-debian6_amd64.deb
 ```
 
-**Adım2 :** Dosya kurulumu başlatılır. Kurulum dosyalarının sisteme yüklenmesinden sonra kurulum web arayüzünde devam eder.
+**Adım3 :** Web arayüzünden devam edebilmek için Nesus servisinin başlatılması gerekir.
 
 ```linux
 root@Stormer:~# systemctl start nessusd.service
 ```
 
-**Adım3 :** Web arayüzünden devam edebilmek için Nesus servisinin başlatılması gerekir.
-
-| ![atgr2]({{ site.url }}/assets/img/Nessus/part1/adim3.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
-|:--:|
-| *Resim2 : Nesus servisinin başlatılması* |
 
 **Adım4 :** Kullanıcı hesabı oluşturmak için bir kullanıcı adı ve parola oluşturulması gerekir.
 
