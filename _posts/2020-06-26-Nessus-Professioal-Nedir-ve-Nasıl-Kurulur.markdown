@@ -17,7 +17,7 @@ Oluşturulacak tarama profiline göre network veya belirli hostlar taranıp güv
 ### **Nessus Tarihçesi**
 
 1998 yılında Renaud Deraison tarafından başlatıldı. İlk versiyon, Deraison 17 yaşında iken çıkarıldı. 2002 yılında, Tenable Network Security kuruldu. İnternet topluluğuna, ücretsiz ve uzaktan bir güvenlik tarayıcısı
-sağlandı. 5 Ekim 2005'te, Tenable Network Security, Nessus 3’ü tescilli(kapalı kaynak) bir lisansa dönüştürüldü. Temmuz 2008'de, Tenable Network Security, Home kullanıcılarına plugin feed’lerine tam erişim veren feed lisansının bir revizyonu gönderildi.
+sağlandı. 5 Ekim 2005'te, Tenable Network Security, Nessus 3 tescilli(kapalı kaynak) bir lisansa dönüştürüldü. Temmuz 2008'de, Tenable Network Security, Home kullanıcılarına plugin feed’lerine tam erişim veren feed lisansının bir revizyonu gönderildi.
 
 ### **Nessus Mimarisi**
 
