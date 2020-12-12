@@ -8,8 +8,11 @@ thumbnail: posts/nessus.jpg
 
 ## **Nessus Professional Nedir?**
 
-**Fiziksel taramalar ve zafiyet analizleri için kullanılan bir güvenlik aracıdır. White-Box Penetration(Sızma Testi) testinde kullanılır. Üzerinde desteklenen çoklu platform ağı ve ana güvenlik açığı tarayıcı sunucusudur(Windows, Linux, UNIX, Mac).**
-- Client tarafta ise: 
+**Fiziksel taramalar ve zafiyet analizleri için kullanılan bir güvenlik aracıdır. White-Box Penetration(Sızma Testi) testinde kullanılır. Üzerinde desteklenen çoklu platform ağı ve ana güvenlik açığı tarayıcı sunucusudur.**
+
+- Server :
+    - Windows, Linux, UNIX, Mac
+- Client : 
     - WEB Tabanlı ve Mobil ( IOS,Android ) 
 
 Oluşturulacak tarama profiline göre network veya belirli hostlar taranıp güvenlik açıkları keşfedilebilir. Nessus, rekabetçi çözümler, OS taramaları, ağ aygıtları, veritabanları, web sunucuları ve güvenlik açıklarını tehditler ve uyumluluk ihlalleri için kritik altyapıdan daha fazla teknolojiyi desteklemektedir. Nessus Professional, varlık bulma, yapılandırma denetimi, hedef profilleme, kötü amaçlı yazılım tespiti, hassas veri bulma gibi özellikleri barındırmaktadır.
