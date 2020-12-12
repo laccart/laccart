@@ -165,7 +165,7 @@ Kurulum İçin:
 
 **Adım1 :** Öncelikle kurulum dosyası indirilir.
 
-| ![atgr2]({{ site.url }}/assets/img/Nessus/part1/adim1.png){: style="display: block; margin-left: auto; margin-right: auto; width: 70% "} |
+| ![atgr2]({{ site.url }}/assets/img/Nessus/part1/adim1.png){: style="display: block; margin-left: 20%; margin-right: auto; width: 70% "} |
 |:--:|
 | *Resim2 : Nesus kurulum dosyasının indirilmesi* |
 
