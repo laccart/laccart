@@ -143,7 +143,7 @@ Plugin otomatik güncelleştirmelerini görmek için:
 ## **Nessus İndirmek**
 https://www.tenable.com/downloads/nessus adresinden işletim sistemi bilgisine göre indirilebilir.
 
-| ![atgr1]({{ site.url }}/assets/img/Nessus/part1/Resim1.png){: style="display: block; margin-left: auto; margin-right: auto; width: 80% "} |
+| ![atgr1]({{ site.url }}/assets/img/Nessus/part1/Resim1.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
 | *Resim1 : Nesus Kurulum Dosyaları* |
 
