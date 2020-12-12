@@ -165,53 +165,53 @@ Kurulum İçin:
 
 **Adım1 :** Öncelikle kurulum dosyası indirilir.
 
-| ![atgr2]({{ site.url }}/assets/img/Nessus/part1/adim1.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
-|:--:|
-| *Resim2 : Nesus kurulum dosyasının indirilmesi* |
+```linux
+root@Stormer:~# dpkg -i Nessus-7.1.0-debian6_amd64.deb
+```
 
 **Adım2 :** Dosya kurulumu başlatılır. Kurulum dosyalarının sisteme yüklenmesinden sonra kurulum web arayüzünde devam eder.
 
-| ![atgr3]({{ site.url }}/assets/img/Nessus/part1/adim2.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
-|:--:|
-| *Resim3 : Nesus kurulum dosyasının kurulması* |
+```linux
+root@Stormer:~# systemctl start nessusd.service
+```
 
 **Adım3 :** Web arayüzünden devam edebilmek için Nesus servisinin başlatılması gerekir.
 
-| ![atgr4]({{ site.url }}/assets/img/Nessus/part1/adim3.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
+| ![atgr2]({{ site.url }}/assets/img/Nessus/part1/adim3.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
-| *Resim4 : Nesus servisinin başlatılması* |
+| *Resim2 : Nesus servisinin başlatılması* |
 
 **Adım4 :** Kullanıcı hesabı oluşturmak için bir kullanıcı adı ve parola oluşturulması gerekir.
 
-| ![atgr8]({{ site.url }}/assets/img/Nessus/part1/adim7.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
+| ![atgr3]({{ site.url }}/assets/img/Nessus/part1/adim7.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
-| *Resim5 : Kullanıcı hesabı oluşturma ekranı* |
+| *Resim3 : Kullanıcı hesabı oluşturma ekranı* |
 
 
 **Adım5 :** Kullanıcı hesabının oluşturulmasından sonra Lisans anahtarının girilmesi gerekir.
 
-| ![atgr10]({{ site.url }}/assets/img/Nessus/part1/adim9.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
+| ![atgr4]({{ site.url }}/assets/img/Nessus/part1/adim9.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
-| *Resim6 : Lisans anahtarının girilmesi* |
+| *Resim4 : Lisans anahtarının girilmesi* |
 
 **Adım6 :** Giriş yapıldıktan sonra Nesus tarama paneli görüntülenir.
 
-| ![atgr12]({{ site.url }}/assets/img/Nessus/part1/adim11.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
+| ![atgr5]({{ site.url }}/assets/img/Nessus/part1/adim11.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
-| *Resim7 : Nessus Tarama paneli* |
+| *Resim5 : Nessus Tarama paneli* |
 
 ### **Nesus Windows Kurulumu**
 
 İndirme işlemi gerçekleştirildikten sonra yanda gösterildiği gibi **next** işlemlerini gerçekleştirerek kurulum yapılır.
 
-| ![atgr13]({{ site.url }}/assets/img/Nessus/part1/Resim2.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
+| ![atgr6]({{ site.url }}/assets/img/Nessus/part1/Resim2.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
-| *Resim8 : Nessus Windows Kurulumu* |
+| *Resim6 : Nessus Windows Kurulumu* |
 
 ### **Nesus Mac OSX Kurulumu**
 
 İndirilmiş olan dosya extract edildikten sonra Windows ortamında yapıldığı gibi çift tıklanarak kurulum işlemini başlatılır.
 
-| ![atgr14]({{ site.url }}/assets/img/Nessus/part1/Resim3.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
+| ![atgr7]({{ site.url }}/assets/img/Nessus/part1/Resim3.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
-| *Resim9 : Nessus Mac OSX Kurulumu* |
+| *Resim7 : Nessus Mac OSX Kurulumu* |
