@@ -105,11 +105,11 @@ Söz dizimi olarak C programlama diline benzemektedir. Linux editöründe ya da 
 
 ### **NASL Sorgu Yazma Mantığı**
 
-**ConEguration**
+**Configuration**
 - Plugin bilgileri
 - ID, ismi, açıklaması, kategorisi, ailesi, bağımlılıkları, ön koşulları.
 
-**Post ConEguration—Included Header**
+**Post Configuration—Included Header**
 C programlama dilindeki kütüphane tanımlanması gibidir.
 - dump.inc : Standart çıktılardaki verileri göstermek içindir.
 - ftp_func.inc, http_func.inc, smb_func.inc, smtp_func.inc vb.
