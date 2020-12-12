@@ -104,7 +104,9 @@ Ağ ile ilgili görevleri gerçekleştirmek için optimize edilmiş yerleşik i�
 
 ### **Neden NASL?**
 
-Normalde Nessus, pluginlerini kendisi yazıp kullanıcılarına güncelleme göndermekteydi. Böylece kullanıcıların düzenli olarak güncelleme yapması gerekiyordu. Şimdi ise, kullanıcı bu dili öğrendikten sonra kendisine özel durumlar oluşturup kendi güvenlik kontrollerini yazabilir. NASL seçiminde kolay, anlaşılır, kod yazımı basit bir betik dili olması önemli rol alır. C programlama dili gibi dilleri bilen kullanıcılar için uyum süresi kısadır.
+- Kullanıcı NASL dilini öğrendikten sonra kendisine özel durumlar oluşturup kendi güvenlik kontrollerini yazabilir. 
+- Kolay, anlaşılır, kod yazımı basit bir betik dili olması. 
+- C programlama dili gibi dilleri bilen kullanıcılar için uyum süresi kısadır.
 
 ### **NASL Komut Dosyası Entegrasyonu**
 
