@@ -14,12 +14,12 @@ thumbnail: posts/nessus.jpg
 
 Oluşturulacak tarama profiline göre network veya belirli hostlar taranıp güvenlik açıkları keşfedilebilir. Nessus, rekabetçi çözümler, OS taramaları, ağ aygıtları, veritabanları, web sunucuları ve güvenlik açıklarını tehditler ve uyumluluk ihlalleri için kritik altyapıdan daha fazla teknolojiyi desteklemektedir. Nessus Professional, varlık bulma, yapılandırma denetimi, hedef profilleme, kötü amaçlı yazılım tespiti, hassas veri bulma gibi özellikleri barındırmaktadır.
 
-## **Nessus Tarihçesi**
+### **Nessus Tarihçesi**
 
 1998 yılında Renaud Deraison tarafından başlatıldı. İlk versiyon, Deraison 17 yaşında iken çıkarıldı. 2002 yılında, Tenable Network Security kuruldu. İnternet topluluğuna, ücretsiz ve uzaktan bir güvenlik tarayıcısı
 sağlandı. 5 Ekim 2005'te, Tenable Network Security, Nessus 3’ü tescilli(kapalı kaynak) bir lisansa dönüştürüldü. Temmuz 2008'de, Tenable Network Security, Home kullanıcılarına plugin feed’lerine tam erişim veren feed lisansının bir revizyonu gönderildi.
 
-## **Nessus Mimarisi**
+### **Nessus Mimarisi**
 
 Nesus bir İstemci-Sunucu (Client-Server) modeline dayanır. Nessus istemcileri, başlatılmasına izin verilmeden önce sunucuya kimlik doğrulanması yapılmalıdır. Bu mimari, Nessus kurulumları yönetmeyi
 kolaylaştırır.
@@ -28,7 +28,7 @@ Nessus Sunucusu : **nessusd**
 - Gerçek zafiyet testlerini yapmaktan sorumlu.
 - Son kullanıcıların kullandığı Nessus istemcilerinden gelen bağlantıların dinlenmesi, belirli taramaları yapılandırabilir ve başlatabilir.
 
-## **Neden Nessus?**
+### **Neden Nessus?**
 
 - Bugün 20.000 ’den fazla kuruluş Nessus Professional’ı kullanmakta ve dünya çapında 1.5 milyondan fazla kullanıcısı bulunmaktadır.
 - Yüksek hızlı hassas tarama ve düşük false-positives.
@@ -39,7 +39,7 @@ Nessus Sunucusu : **nessusd**
 - Kolay kurulumu ve bakım kolaylığı
 - Yüzbinlerce sistem ölçeklenebilirliği
 
-## **Nesus Minimum Donanım Gereksinimleri**
+### **Nesus Minimum Donanım Gereksinimleri**
 
 **Maksimum 50.000 host için :**
 - İşlemci : 1 tane Dual-Core 2 GHz
@@ -51,7 +51,7 @@ Nessus Sunucusu : **nessusd**
 - RAM Boyutu : 2 GB RAM (8 GB RAM önerilir)
 - Disk Boyutu : (Raporlama için ek alan gerekebilir)
 
-## **Nesus Lisans Modeli**
+### **Nesus Lisans Modeli**
 Nessus 2 lisans modeline sahiptir:
 - **Professional Feed**
     - Ticari Kullanım
@@ -61,7 +61,7 @@ Nessus 2 lisans modeline sahiptir:
     - Sadece Kişisel Kullanım
     - İşlevselliğin sınırlaması vardır. Bunlar; eş zamanlı IP tarama, tarama zamanlaması yok, uygunluk ve denetim kontrolü yoktur.
 
-## **Nesus Terminolojisi**
+### **Nesus Terminolojisi**
 
 **Policy** : Tarama için yapılandırma ayarları.
 
@@ -76,7 +76,7 @@ Nessus 2 lisans modeline sahiptir:
 
 **Plugin Family** : Ortak bir şeye sahip plugingrubu.Örneğin : FTP, Web Sunucuları, Cisco.
 
-## **Nesus Özelleştirme Seçenekleri**
+### **Nesus Özelleştirme Seçenekleri**
 - **Report Templates**
     - XSLT ’de kodlanmış raporlama şablonudur.
 - **Plugins**
@@ -86,7 +86,7 @@ Nessus 2 lisans modeline sahiptir:
 - **Audit Files**
     - Pseudo—XML ’de kodlanmış denetim dosyaları olup sadece Professional Feed versiyonuna özgüdür.
 
-## **NASL ( Nessus Attack Scripting Language )**
+### **NASL ( Nessus Attack Scripting Language )**
 
 Desteklenen bir betik dili olup Nessus için güvenlik kontrollerinin yazılması için oluşturulmuştur. Güvenlik kontrolleri plugin family gruplarına göre ayrılır. Sadece local sistemlerde komutlar çalıştırılır. Paketler başka bir ana bilgisayara hedeften gönderilmez. 
 
@@ -95,15 +95,15 @@ Ağ ile ilgili görevleri gerçekleştirmek için optimize edilmiş yerleşik i�
 - Portlar açık ise açık bağlantıları göstermek
 - IP/TCP/ICMP paketleri
 
-## **Neden NASL?**
+### **Neden NASL?**
 
 Normalde Nessus, pluginlerini kendisi yazıp kullanıcılarına güncelleme göndermekteydi. Böylece kullanıcıların düzenli olarak güncelleme yapması gerekiyordu. Şimdi ise, kullanıcı bu dili öğrendikten sonra kendisine özel durumlar oluşturup kendi güvenlik kontrollerini yazabilir. NASL seçiminde kolay, anlaşılır, kod yazımı basit bir betik dili olması önemli rol alır. C programlama dili gibi dilleri bilen kullanıcılar için uyum süresi kısadır.
 
-## **NASL Komut Dosyası Entegrasyonu**
+### **NASL Komut Dosyası Entegrasyonu**
 
 Söz dizimi olarak C programlama diline benzemektedir. Linux editöründe ya da herhangi bir Not Defteri üzerinden komutlar yazıldıktan sonra .nasl uzantısıyla kaydedilir. Daha sonra bu dosyayı Nessus sunucusunun kurulu olduğu dizine kopyalanır. Linux için, oluşturulan .nasl dosyası **/opt/nessus/lib/nessus/plugin** dizinine kopyalanır. Kopyalamadan sonra Nessus sunucusu yeniden başlatılır. Sunucu yeniden başlatıldıktan sonra istemci arayüzü de yeniden başlatılır. Böylece oluşturulan .nasl dosyası Nessus üzerinden kullanılabilir.
 
-## **NASL Sorgu Yazma Mantığı**
+### **NASL Sorgu Yazma Mantığı**
 
 **ConEguration**
 - Plugin bilgileri
@@ -123,7 +123,7 @@ C programlama dilindeki kütüphane tanımlanması gibidir.
     - **Security_note** : Misc bildirmek için kullanılır.
     - Tüm bu işlevleri iki argüman alır. Bunlar, port numarası ve raporda gösterilecek açıklama dizesi.
 
-## **NASL Hata Ayıklama Betiği**
+### **NASL Hata Ayıklama Betiği**
 
 Söz dizimlerini kontrol etmek için nasl betiği yazdıktan sonra ndbg binary’nin **-t** parametresi kullanılır.
 - cd /opt/nessus/bin
@@ -131,7 +131,7 @@ Söz dizimlerini kontrol etmek için nasl betiği yazdıktan sonra ndbg binary�
 
 Bu söz dizimi hatasını kontrol edecek ve satır numarası ile birlikte varsa hatayı gösterecektir. Nasl Remote Debugger(ndbg).
 
-## **PLUGINLER**
+### **PLUGINLER**
 Bir taramada neler yapmasını, ne çapta bir tarama gerçekleştireceğimizi belirlemek için kullanılır. Tarama sonuçlarının güncel olması açısından pluginler güncelleştirilmelidir. Pluginler, varsayılan olarak 24 saatte bir güncelleştirilir. Ayrıca manuel güncelleştirmek için:
 - **/opt/nessus/sbin/nessuscli update** komutu çalıştırılmalıdır.
 
@@ -143,11 +143,11 @@ Plugin otomatik güncelleştirmelerini görmek için:
 ## **Nessus İndirmek**
 https://www.tenable.com/downloads/nessus adresinden işletim sistemi bilgisine göre indirilebilir.
 
-| ![atgr1]({{ site.url }}/assets/img/Nessus/part1/Resim1.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
+| ![atgr1]({{ site.url }}/assets/img/Nessus/part1/Resim1.png){: style="display: block; margin-left: auto; margin-right: auto; width: 80% "} |
 |:--:|
 | *Resim1 : Nesus Kurulum Dosyaları* |
 
-## **Nessus Linux Kurulumu**
+### **Nessus Linux Kurulumu**
 
 Kurulum İçin:
 - **Red Hat version 6**
@@ -161,71 +161,71 @@ Kurulum İçin:
 - **Red Hat, CentOS, Oracle Linux, Fedora, SUSE, FreeBSD, Debian/Kali ve Ubuntu**
     - service nessusd start 
 
-## **Nessus Kali Linux Kurulum Adımları**
+### **Nessus Kali Linux Kurulum Adımları**
 
 **Adım1 :** Öncelikle kurulum dosyası indirilir.
 
-| ![atgr2]({{ site.url }}/assets/img/Nessus/part1/adim1.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
+| ![atgr2]({{ site.url }}/assets/img/Nessus/part1/adim1.png){: style="display: block; margin-left: auto; margin-right: auto; width: 70% "} |
 |:--:|
 | *Resim2 : Nesus kurulum dosyasının indirilmesi* |
 
 **Adım2 :** Dosya kurulumu başlatılır. Kurulum dosyalarının sisteme yüklenmesinden sonra kurulum web arayüzünde devam eder.
 
-| ![atgr3]({{ site.url }}/assets/img/Nessus/part1/adim2.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
+| ![atgr3]({{ site.url }}/assets/img/Nessus/part1/adim2.png){: style="display: block; margin-left: auto; margin-right: auto; width: 80% "} |
 |:--:|
 | *Resim3 : Nesus kurulum dosyasının kurulması* |
 
 **Adım3 :** Web arayüzünden devam edebilmek için Nesus servisinin başlatılması gerekir.
 
-| ![atgr4]({{ site.url }}/assets/img/Nessus/part1/adim3.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
+| ![atgr4]({{ site.url }}/assets/img/Nessus/part1/adim3.png){: style="display: block; margin-left: auto; margin-right: auto; width: 80% "} |
 |:--:|
 | *Resim4 : Nesus servisinin başlatılması* |
 
 **Adım4-5-6 :** Web arayüzünden devam edebilmek için tarayıcının açılması ve gerekli exceptionların verilmesi gerekir.
 
-| ![atgr5]({{ site.url }}/assets/img/Nessus/part1/adim4.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
+| ![atgr5]({{ site.url }}/assets/img/Nessus/part1/adim4.png){: style="display: block; margin-left: auto; margin-right: auto; width: 70% "} |
 |:--:|
 | *Resim5 : Web tarayıcısından uyarı ekranının gelmesi* |
 
-| ![atgr6]({{ site.url }}/assets/img/Nessus/part1/adim5.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
+| ![atgr6]({{ site.url }}/assets/img/Nessus/part1/adim5.png){: style="display: block; margin-left: auto; margin-right: auto; width: 70% "} |
 |:--:|
 | *Resim6 : URL adresine Exception verilmesi* |
 
-| ![atgr7]({{ site.url }}/assets/img/Nessus/part1/adim6.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
+| ![atgr7]({{ site.url }}/assets/img/Nessus/part1/adim6.png){: style="display: block; margin-left: auto; margin-right: auto; width: 70% "} |
 |:--:|
 | *Resim7 : Verilen Exception'ın onaylanması* |
 
 **Adım7 :** Kullanıcı hesabı oluşturmak için bir kullanıcı adı ve parola oluşturulması gerekir.
 
-| ![atgr8]({{ site.url }}/assets/img/Nessus/part1/adim7.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
+| ![atgr8]({{ site.url }}/assets/img/Nessus/part1/adim7.png){: style="display: block; margin-left: auto; margin-right: auto; width: 80% "} |
 |:--:|
 | *Resim8 : Kullanıcı hesabı oluşturma ekranı* |
 
 **Adım8 :** Uygulamanın kullanılması için mail adresine lisans anahtarının gelmesi gerekir. Lisans anahtarı için Nessus resmi sitesinde kurulum dosyası indirme sırasında kayıt olmak gerekir.
 
-| ![atgr9]({{ site.url }}/assets/img/Nessus/part1/adim8.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
+| ![atgr9]({{ site.url }}/assets/img/Nessus/part1/adim8.png){: style="display: block; margin-left: auto; margin-right: auto; width: 80% "} |
 |:--:|
 | *Resim9 : Lisans anahtarının elde edilmesi* |
 
 **Adım9 :** Kullanıcı hesabının oluşturulmasından sonra Lisans anahtarının girilmesi gerekir.
 
-| ![atgr10]({{ site.url }}/assets/img/Nessus/part1/adim9.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
+| ![atgr10]({{ site.url }}/assets/img/Nessus/part1/adim9.png){: style="display: block; margin-left: auto; margin-right: auto; width: 80% "} |
 |:--:|
 | *Resim10 : Lisans anahtarının girilmesi* |
 
 **Adım10-11 :** Kurulumun başlatılması sırasında sisteme pluginler vb. dosyalar yüklenmektedir. Kurulum bittikten sonra panel giriş ekranı gelmektedir. Giriş ekranında oluşturulan kullanıcı hesabı ile giriş yapılır.
 
-| ![atgr11]({{ site.url }}/assets/img/Nessus/part1/adim10.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
+| ![atgr11]({{ site.url }}/assets/img/Nessus/part1/adim10.png){: style="display: block; margin-left: auto; margin-right: auto; width: 80% "} |
 |:--:|
 | *Resim11 : Kurulum ve giriş paneli* |
 
 **Adım12 :** Giriş yapıldıktan sonra Nesus tarama paneli görüntülenir.
 
-| ![atgr12]({{ site.url }}/assets/img/Nessus/part1/adim11.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
+| ![atgr12]({{ site.url }}/assets/img/Nessus/part1/adim11.png){: style="display: block; margin-left: auto; margin-right: auto; width: 80% "} |
 |:--:|
 | *Resim12 : Nessus Tarama paneli* |
 
-## **Nesus Windows Kurulumu**
+### **Nesus Windows Kurulumu**
 
 İndirme işlemi gerçekleştirildikten sonra yanda gösterildiği gibi **next** işlemlerini gerçekleştirerek kurulum yapılır.
 
@@ -233,7 +233,7 @@ Kurulum İçin:
 |:--:|
 | *Resim13 : Nessus Windows Kurulumu* |
 
-## Nesus Mac OSX Kurulumu**
+### **Nesus Mac OSX Kurulumu**
 
 İndirilmiş olan dosya extract edildikten sonra Windows ortamında yapıldığı gibi çift tıklanarak kurulum işlemini başlatılır.
 
