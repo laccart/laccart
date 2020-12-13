@@ -1,4 +1,0 @@
----
-title: Hakkımda
-layout: home
----
