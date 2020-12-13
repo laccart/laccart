@@ -8,7 +8,7 @@ thumbnail: posts/nessus.jpg
 
 ## **Nessus Nedir ve Nasıl Kurulur?**
 
-**Fiziksel taramalar ve zafiyet analizleri için kullanılan bir güvenlik aracıdır. White-Box Penetration(Sızma Testi) testinde kullanılır. Üzerinde desteklenen çoklu platform ağı ve ana güvenlik açığı tarayıcı sunucusudur.**
+**Nessus, fiziksel taramalar ve zafiyet analizleri için kullanılan bir güvenlik aracıdır. White-Box Penetration(Sızma Testi) testinde kullanılır. Üzerinde desteklenen çoklu platform ağı ve ana güvenlik açığı tarayıcı sunucusudur.**
 
 - Server :
     - Windows, Linux, UNIX, Mac
