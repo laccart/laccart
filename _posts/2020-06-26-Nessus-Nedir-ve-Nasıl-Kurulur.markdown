@@ -1,12 +1,12 @@
 ---
-title:  "Nessus Professional Nedir ve Nasıl Kurulur?"
+title:  "Nessus Nedir ve Nasıl Kurulur?"
 date:   2018-06-26 
 categories: 
     - network-guvenligi
 thumbnail: posts/nessus.jpg
 ---
 
-## **Nessus Professional Nedir?**
+## **Nessus Nedir ve Nasıl Kurulur?**
 
 **Fiziksel taramalar ve zafiyet analizleri için kullanılan bir güvenlik aracıdır. White-Box Penetration(Sızma Testi) testinde kullanılır. Üzerinde desteklenen çoklu platform ağı ve ana güvenlik açığı tarayıcı sunucusudur.**
 
