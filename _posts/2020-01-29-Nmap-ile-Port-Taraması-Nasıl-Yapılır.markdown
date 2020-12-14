@@ -349,9 +349,9 @@ root@Stormer:~# nmap -T4 -Pn -p135,139,445 -v -n --max-rtt-timeout 200ms --initi
 
 - **–-defeat-rst-ratelimit** : Yalnızca açık portlara önem verildiğinde kullanışlıdır. Bu parametre kullanılarak hız sınırlamaları göz ardı edilir. Taramalarda RST cevabı için uzun bir süre beklenmediğinde, bazı portların yanıt vermeyeceği için doğruluğu azaltabilir.
 
-- **–-defeat-icmp-ratelimit** :  Hız için doğruluk sunan bir parametre olup ICMP hata mesajlarını hızlandıran hostlara karşı UDP tarama hızını arttırır. Yanıt vermeyen portları varsayılan olarak "open|filtered" yerine "close|filtered" olarak işaretler.
+- **–-defeat-icmp-ratelimit** :  Hız için doğruluk sunan bir parametre olup ICMP hata mesajlarını hızlandıran hostlara karşı UDP tarama hızını arttırır. Yanıt vermeyen portları varsayılan olarak "open&#124;filtered" yerine "close&#124;filtered" olarak işaretler.
 
-- **–-nsock-engine epoll|kqueue|poll|select** : Bir nsock IO multiplexing motorunun kullanımını sağlamaktadır. **nmap –V** parametresi ile hangi motorların desteklediğini görülebilir.
+- **–-nsock-engine epoll&#124;kqueue&#124;poll&#124;select** : Bir nsock IO multiplexing motorunun kullanımını sağlamaktadır. **nmap –V** parametresi ile hangi motorların desteklediğini görülebilir.
 
 ### 4.5 Nmap Performansının Optimize Edilmesi
 
