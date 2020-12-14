@@ -193,7 +193,7 @@ Bir ön liste taraması, hangi hedeflerin tarandığını doğrulamaya yardımc�
 
 #### 3.4.2 Port Taramasını Devre Dışı Bırakmak (-sn)
 
-Nmap, bir ağ üzerinde aktif hostların hızlı bir şekilde tespit edilmesi için –sn parametresini kullanır. Tespit edilen hostların IP adresleri belirtilmektedir. Bu işleme “ping scan” denir. Port taraması gerçekleştirmeden Nmap uygulamasının içerisindeki scriptlerden ve traceroute problarından faydalanılmaktadır. Ping Scan, liste taramasına göre daha aktif bir tarama türüdür. Bu tarama türü ile hedeflerin IP adresleri ve hostname bilgileri elde edilir. 
+Nmap, bir ağ üzerinde aktif hostların hızlı bir şekilde tespit edilmesi için –sn parametresini kullanır. Tespit edilen hostların IP adresleri belirtilmektedir. Bu işleme **ping scan** denir. Port taraması gerçekleştirmeden Nmap uygulamasının içerisindeki scriptlerden ve traceroute problarından faydalanılmaktadır. Ping Scan, liste taramasına göre daha aktif bir tarama türüdür. Bu tarama türü ile hedeflerin IP adresleri ve hostname bilgileri elde edilir. 
 
 ```linux
 root@Stormer:~# nmap -sn -T4 kizilcinar.com/28
@@ -274,7 +274,7 @@ root@Stormer:~# nmap -sn -n PR --packet-trace --send-eth 192.168.16.161
 
 #### 3.5.7 SCTP INIT Ping
 
-Bu tarama türü –PY kullanılarak gerçekleştirilmektedir. Bu parametre kullanılarak içerisinde INIT öbeği bulunan bit SCTP paketi gönderilmektedir. Varsayılan olarak 80. portu hedef almaktadır. Örnek olarak “–PY22,80” gibi bir parametre ile 22. ve 80. portlar ile bağlantı kurulacaktır. Portlar açık ise INIT-ACK yanıtı dönmektedir. Nmap, bu yanıta işlevsel bir SCTP paketi göndermek yerine ABORT yanıtını vererek bağlantıyı bitirmektedir. Böylece bu iki yanıt ile hedef makine üzerindeki portların açık olduğu tespit edilmektedir.
+Bu tarama türü –PY kullanılarak gerçekleştirilmektedir. Bu parametre kullanılarak içerisinde INIT öbeği bulunan bit SCTP paketi gönderilmektedir. Varsayılan olarak 80. portu hedef almaktadır. Örnek olarak **–PY22,80** gibi bir parametre ile 22. ve 80. portlar ile bağlantı kurulacaktır. Portlar açık ise INIT-ACK yanıtı dönmektedir. Nmap, bu yanıta işlevsel bir SCTP paketi göndermek yerine ABORT yanıtını vererek bağlantıyı bitirmektedir. Böylece bu iki yanıt ile hedef makine üzerindeki portların açık olduğu tespit edilmektedir.
 
 ### 3.6 Host Keşif Stratejileri
 

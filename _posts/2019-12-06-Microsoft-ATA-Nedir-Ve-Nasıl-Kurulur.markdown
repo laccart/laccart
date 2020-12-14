@@ -111,7 +111,7 @@ ATA Gateway’e alternatif olarak yapılmıştır. Port mirroring yapılmadan ye
 
 - Event’ları port mirroring yapmadan yerelde inceleyebilir.
 - Domain Synchronizer Candidate, belirli bir Active Directory domaininden tüm varlıkları proaktif olarak eşitlemekten sorumludur. Bir Gateway, Domain Synchronizer olarak görev yapmak üzere aday listesinden rastgele seçilir. Varsayılan olarak bütün ATA Gateway’ler birer domain synchronizer adayıdır.
-- ATA, Lightweight Gateway, Domain Controller’daki kullanılabilir bilgi işlem ve bellek kapasitesini değerlendiren izleme bileşeni içerir. Her 10 saniyede bir CPU ve bellek kullanım kotasını dinamik olarak güncellemektedir. Kaynakların tükenmesi durumunda, yalnızca kısmi trafik izlenir ve “Dropped port mirrored network traffic” uyarısı oluşur.
+- ATA, Lightweight Gateway, Domain Controller’daki kullanılabilir bilgi işlem ve bellek kapasitesini değerlendiren izleme bileşeni içerir. Her 10 saniyede bir CPU ve bellek kullanım kotasını dinamik olarak güncellemektedir. Kaynakların tükenmesi durumunda, yalnızca kısmi trafik izlenir ve **Dropped port mirrored network traffic** uyarısı oluşur.
 
 
 ### Ağ Bileşenleri
@@ -157,19 +157,19 @@ Tablo 5 üzerindeki özelikler, ATA Gateway tarafından izlenen Domain Controlle
 Microsoft ATA’nın düzenli ve sorunsuz bir şekilde çalışması için sistemsel gereksinimlerinin karşılanması gerekmektedir. Microsoft ATA, ATA Center, ATA Gateway ve/veya ATA Lightweight Gateway’den oluşur. Ayrıca Microsoft ATA, Active Directory Forest yapısı üzerinde çalışmakta olup Windows 2003 ve üzerindeki sürümlerde kullanılabilir.
 
 ### ATA Center Gereksinimleri
-ATA Center, Windows Server 2012 R2, Windows Server 2016 ve Windows Server 2019 sunucularda yüklenebilmektedir. ATA Center, Windows Server Core’u desteklememektedir. Bir domaine üzerinde çalışabildiği gibi bir Workgroup üyesi olarak da çalışabilmektedir. Windows 2012 R2 sunucularda yüklenmeden önce ihtiyaç duyulan KB2919355 kodlu güncelleştirmenin yapılması gerekmektedir. Powershell üzerinde güncelleştirmenin kontrolünü yapmak için “Get-HotFix –Id kb2919355” cmdlet’in çalıştırılması gerekmektedir.
+ATA Center, Windows Server 2012 R2, Windows Server 2016 ve Windows Server 2019 sunucularda yüklenebilmektedir. ATA Center, Windows Server Core’u desteklememektedir. Bir domaine üzerinde çalışabildiği gibi bir Workgroup üyesi olarak da çalışabilmektedir. Windows 2012 R2 sunucularda yüklenmeden önce ihtiyaç duyulan KB2919355 kodlu güncelleştirmenin yapılması gerekmektedir. Powershell üzerinde güncelleştirmenin kontrolünü yapmak için **Get-HotFix –Id kb2919355** cmdlet’in çalıştırılması gerekmektedir.
 
 ATA Center’ı sanal makine olarak çalıştırıyorsanız, yeni bir kontrol noktası oluşturmadan önce sunucuyu kapatmanız olabilecek veritabanı bozulmalarını önleyebilmektedir. Fiziksel bir sunucuda çalışırken, BIOS’ta Non-Uniform bellek erişimini (NUMA) devre dışı bırakılması gerekir. Windows Server 2008 R2 ve 2012’de Gateway, Multi Process Group modunda desteklenmemektedir. ATA Center sunucusu, ATA Gateway ve Domain Controller sunucularının beş dakika içerisinde senkronize edilmesi gerekmektedir.
 
 En az bir ağ bağdaştırıcısı olmalıdır. ATA Center 443 numaralı portu açık olan bütün IP adresleri ile iletişime geçmektedir. ATA, kimlik bilgilerinin kontrolü için LDAP kullanmaktadır. Bundan dolayı 389 numaralı port açık olmalıdır. ATA’yı daha hızlı kurmak ve dağıtmak için imzalı sertifikalar kullanılmalıdır. ATA, mevcut bir sertifikayı güncelleme işlemini desteklememektedir. Ancak yeni bir sertifika oluşturulabilir.  ATA 1.8 sürümünden beri, ATA Gateway’ler ve Lightweight Gateway’ler kendi sertifika işlemleri yönetici etkileşimi gerektirmeksizin yönetebilir.
 
 ### ATA Gateway Gereksinimleri
-Windows Server 2012 R2, Windows Server 2016 ve Windows Server 2019 gibi sunucularda desteklenmektedir. Bir domain controller veya workgroup üyesi olarak bir sunucuya yüklenebilir. Windows Server 2012 R2 kurulu bir makineye ATA Gateway yüklenmeden önce “Get-HotFix -Id kb2919355” komutunun Powershell üzerinde çalıştırılıp güncellemenin yüklü olup olmadığı kontrol edilmelidir. Güncelleştirme yüklü değilse, ATA Gateway kurulmadan güncelleştirmenin yapılması gerekmektedir. ATA’nın binary dosyaları, ATA logları ve performans loglarının depolanması ise en az 5 GB’lık alana ihtiyaç duyulur.
+Windows Server 2012 R2, Windows Server 2016 ve Windows Server 2019 gibi sunucularda desteklenmektedir. Bir domain controller veya workgroup üyesi olarak bir sunucuya yüklenebilir. Windows Server 2012 R2 kurulu bir makineye ATA Gateway yüklenmeden önce **Get-HotFix -Id kb2919355** komutunun Powershell üzerinde çalıştırılıp güncellemenin yüklü olup olmadığı kontrol edilmelidir. Güncelleştirme yüklü değilse, ATA Gateway kurulmadan güncelleştirmenin yapılması gerekmektedir. ATA’nın binary dosyaları, ATA logları ve performans loglarının depolanması ise en az 5 GB’lık alana ihtiyaç duyulur.
 
 En iyi performansı sergilemesi için ATA Gateway üzerindeki güç seçeneği yüksek performans olarak ayarlanmalıdır. Beş dakika içerisinde senkronize işlemlerinin gerçekleştirilmesi gerekmektedir. En az bir Management adaptörü ve bir Capture adaptörü gerekmektedir. Management adaptörü, kurumsal iletişim için kullanılmaktadır. ATA Gateway domain ağında ise, otomatik olarak yapılandırılabilir. Capture adaptörü ise, domain controller ve domain ağından gelen trafiği gözlemektedir. ATA Gateway’in işlemlerini sorunsuz yapması için 135 numaralı portunun (RPC) ve 137 numaralı NetBIOS portunun inbound olarak açık olması gerekmektedir.
 
 ### ATA Lightweight Gateway Gereksinimleri
-Windows Server 2008 R2 SP1 ( Server Core hariç), Windows Server 2012, Windows Server 2012 R2, Windows Server 2016 ve Windows Server 2019(Server Nano hariç) gibi Domain Controller sunucuları desteklemektedir. Domain Controller, salt okunur (readonly) olabilir. Windows Server 2012 R2 kurulu bir makineye ATA Gateway yüklenmeden önce “Get-HotFix -Id kb2919355” komutu Powershell üzerinde çalıştırılıp güncellemenin yüklü olup olmadığı kontrol edilmelidir. Windows Server 2012 R2 Server Core için “Get-HotFix –Id kb3000850” komutu ile güncelleştirmenin yapılması gerekmektedir. Güncelleştirme yüklü değilse, ATA Gateway kurulmadan önce güncelleştirmenin yapılması gerekmektedir. Güncelleştirme sırasında .NET Framework 4.6.1 yüklendiği için Domain Controller sunucusunun yeniden başlatılmasına neden olabilir. ATA’nın binary dosyaları, ATA logları ve performans loglarının depolanması ise en az 5 GB’lık alana ihtiyaç duyulur.
+Windows Server 2008 R2 SP1 ( Server Core hariç), Windows Server 2012, Windows Server 2012 R2, Windows Server 2016 ve Windows Server 2019(Server Nano hariç) gibi Domain Controller sunucuları desteklemektedir. Domain Controller, salt okunur (readonly) olabilir. Windows Server 2012 R2 kurulu bir makineye ATA Gateway yüklenmeden önce **Get-HotFix -Id kb2919355** komutu Powershell üzerinde çalıştırılıp güncellemenin yüklü olup olmadığı kontrol edilmelidir. Windows Server 2012 R2 Server Core için **Get-HotFix –Id kb3000850** komutu ile güncelleştirmenin yapılması gerekmektedir. Güncelleştirme yüklü değilse, ATA Gateway kurulmadan önce güncelleştirmenin yapılması gerekmektedir. Güncelleştirme sırasında .NET Framework 4.6.1 yüklendiği için Domain Controller sunucusunun yeniden başlatılmasına neden olabilir. ATA’nın binary dosyaları, ATA logları ve performans loglarının depolanması ise en az 5 GB’lık alana ihtiyaç duyulur.
 
 Domain Controller makinesinde en az 2 çekirdek ve 6 GB RAM kullanımı gerektirmektedir. En iyi performansı göstermesi için, güç seneğinin yüksek performans olarak işaretlenmesi gerekmektedir. Diğer sunucular gibi beş dakika içerisinde senkronize edilmesi gerekmektedir. ATA Lightweight Gateway, Broadcom Network Adapter Teaming aktif iken Windows Server 2008 R2 Domain Controller sunucularını desteklemez. ATA Lightweight Gateway’in işlemlerini sorunsuz yapması için 135 numaralı portunun (RPC) ve 137 numaralı NetBIOS portunun inbound olarak açık olması gerekmektedir.
 
@@ -203,7 +203,7 @@ Microsoft ATA’nın kurulumunu yapmadan önce gereksinimlerinin eksiksiz bir ş
 | *Şekil 7 : ATA lisans şartları* |
 
 
-Şekil 7'de ATA’yı bu lisans koşulları altında kullanacağımızı belirterek “I accept the Microsoft Software License Terms” alanı işaretlenip “Next” butonuna tıklanmalıdır.
+Şekil 7'de ATA’yı bu lisans koşulları altında kullanacağımızı belirterek **I accept the Microsoft Software License Terms** alanı işaretlenip **Next** butonuna tıklanmalıdır.
 
 
 | ![atgr12]({{ site.url }}/assets/img/MicrosoftATA/sekil8.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
@@ -220,7 +220,7 @@ Microsoft ATA’nın kurulumunu yapmadan önce gereksinimlerinin eksiksiz bir ş
 
 
 
-Şekil 9’da kurulum dosyalarının varsayılan olarak yüklendiği dizini ve veritabanı (MongoDB) dosyalarının yükleneceği dizini göstermektedir. Ayrıca kullanılan sertifikanın oluşturulması için işaretlenmesi gerekmektedir. Sertifikanın süresi bitmeden yenisini oluşturulması gerekmektedir. “Install” butonuna tıklayarak yükleme işlemini başlatılmaktadır.
+Şekil 9’da kurulum dosyalarının varsayılan olarak yüklendiği dizini ve veritabanı (MongoDB) dosyalarının yükleneceği dizini göstermektedir. Ayrıca kullanılan sertifikanın oluşturulması için işaretlenmesi gerekmektedir. Sertifikanın süresi bitmeden yenisini oluşturulması gerekmektedir. **Install** butonuna tıklayarak yükleme işlemini başlatılmaktadır.
 
 
 | ![atgr14]({{ site.url }}/assets/img/MicrosoftATA/sekil10.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
@@ -252,7 +252,7 @@ Microsoft ATA’nın kurulumunu yapmadan önce gereksinimlerinin eksiksiz bir ş
 | *Şekil 13 : ATA’nın domain’e bağlanması* |
 
 
-Şekil 13'te gösterildiği gibi sorunsuz bir şekilde domain ile ATA’nın test bağlantısı başarılı bir şekilde gerçekleştirilmiştir. Bu işlem “Save” butonuna tıklanarak kaydedilir.
+Şekil 13'te gösterildiği gibi sorunsuz bir şekilde domain ile ATA’nın test bağlantısı başarılı bir şekilde gerçekleştirilmiştir. Bu işlem **Save** butonuna tıklanarak kaydedilir.
 
 
 | ![atgr18]({{ site.url }}/assets/img/MicrosoftATA/sekil14.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
@@ -277,7 +277,7 @@ Microsoft ATA’nın kurulumunu yapmadan önce gereksinimlerinin eksiksiz bir ş
 | *Şekil 16 : ATA Lighweight Gateway Gereksinimleri* |
 
 
-Şekil 16'da ATA Lightweight Gateway’in kurulum sırasında sunucunun minimum gereksinimleri karşılayıp karşılamadığının kontrolü için bilgilendirmeler bulunmaktadır. Ayrıca Vmware üzerinde bulunan bir Domain Controller makinesi üzerinde kurulumu ile ilgili uyarı ve bilgilendirmeleri yapmaktadır. Bu gereksinimlerin karşılanması durumunda “Next” butonuna tıklanarak kurulum yapılabilmektedir.
+Şekil 16'da ATA Lightweight Gateway’in kurulum sırasında sunucunun minimum gereksinimleri karşılayıp karşılamadığının kontrolü için bilgilendirmeler bulunmaktadır. Ayrıca Vmware üzerinde bulunan bir Domain Controller makinesi üzerinde kurulumu ile ilgili uyarı ve bilgilendirmeleri yapmaktadır. Bu gereksinimlerin karşılanması durumunda **Next** butonuna tıklanarak kurulum yapılabilmektedir.
 
 
 | ![atgr21]({{ site.url }}/assets/img/MicrosoftATA/sekil17.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
@@ -286,7 +286,7 @@ Microsoft ATA’nın kurulumunu yapmadan önce gereksinimlerinin eksiksiz bir ş
 
 
 
-Şekil 17’de gösterilen Gateway kurulumu için gerekli konfigürasyon dosyalarının yükleneceği dizini göstermektedir. Bu işlemlerden sonra “Install” butonu tıklanması ile kurulum başlatılabilir. Kurulum süreci şekil 18 üzerinde gösterilmektedir.
+Şekil 17’de gösterilen Gateway kurulumu için gerekli konfigürasyon dosyalarının yükleneceği dizini göstermektedir. Bu işlemlerden sonra **Install** butonu tıklanması ile kurulum başlatılabilir. Kurulum süreci şekil 18 üzerinde gösterilmektedir.
 
 | ![atgr22]({{ site.url }}/assets/img/MicrosoftATA/sekil18.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
