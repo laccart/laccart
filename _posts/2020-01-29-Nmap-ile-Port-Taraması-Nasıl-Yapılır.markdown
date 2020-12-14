@@ -67,17 +67,17 @@ Nmap, portları kullanan iki protokolle çalışmaktadır. Bu protokoller TCP ve
 
 Hedef üzerinde bulunan portların durumlarını tespit etmek için uzaktan test etme işlemidir. Portların durumları açık ise port üzerinde gerçekleşen bağlantılar dinlenilip bağlantının güvenli olup olmadığı ve hangi servisler üzerinden işlemler yapılıp yapılmadığı tespit edilmektedir. Portların durumları, aşağıdaki durumlardan oluşmaktadır.
 
-- Open : Portun açık olduğunu belirtmektedir. Genellikle açık olan portlarda servisler çalışmaktadır.
+- **Open** : Portun açık olduğunu belirtmektedir. Genellikle açık olan portlarda servisler çalışmaktadır.
 
-- Closed : Portun kapalı olduğunu belirtmektedir.
+- **Closed** : Portun kapalı olduğunu belirtmektedir.
 
-- Filtered : Portun açık olup olmadığı belirlenememektedir. Çünkü paket filtreleme, problarının porta ulaşmasını engellemektedir.
+- **Filtered** : Portun açık olup olmadığı belirlenememektedir. Çünkü paket filtreleme, problarının porta ulaşmasını engellemektedir.
 
-- Unfiltered : Portun erişilebilir olduğunu göstermektedir. Ancak nmap, portun açık veya kapalı olduğu belireyememektedir.
+- **Unfiltered** : Portun erişilebilir olduğunu göstermektedir. Ancak nmap, portun açık veya kapalı olduğu belireyememektedir.
 
-- "Open|Filtered" : Portun açık veya filtreli olup olmadığının belli olmadığını belirtir.
+- **Open&#124;Filtered** : Portun açık veya filtreli olup olmadığının belli olmadığını belirtir.
 
-- "Closed|Filtered" : Portun kapalı veya filtreli olup olmadığının belli olmadığını belirtir.
+- **Closed&#124;Filtered** : Portun kapalı veya filtreli olup olmadığının belli olmadığını belirtir.
 
 
 ```linux
@@ -137,7 +137,7 @@ Nmap üzerinden UDP taraması gerçekleştirmek için –sU parametresi kullanı
 root@Stormer:~# nmap -sU -sV 192.168.16.160
 ```
 
-Gönderilen bazı UDP paketlerine karşı herhangi bir cevap gelmediği için Nmap portları "open|filtered" olarak belirtmiştir. Açık UDP portlarında kullanılan servislerin sürüm bilgisini elde etmek için –sV parametresi kullanılır.
+Gönderilen bazı UDP paketlerine karşı herhangi bir cevap gelmediği için Nmap portları open&#124;filtered olarak belirtmiştir. Açık UDP portlarında kullanılan servislerin sürüm bilgisini elde etmek için –sV parametresi kullanılır.
 
 #### 4.3.4 TCP NULL, FIN, Xmas Scans (-sN, -sF, -sX)
 
@@ -261,7 +261,7 @@ Bu tarama türü teknik olarak port taraması değildir. Hedef sistem üzerinde 
 root@Stormer:~# nmap -sO -p135 n -v 192.168.16.160
 ```
 
-Yukarıdaki nmap komutunda iki farklı özelliğe göre tarama yapılmıştır. İlk tarama komutu, –sO parametresi ile protokol taraması gerçekleştirileceği belirtilir. –p parametresine protokol numarası atanır. Detaylı çıktı olması için –v parametresi, DNS çözümlemesinin yapılmaması için –n parametresi kullanılmıştır.  İkinci tarama komutunda da port taraması yapılmıştır. İlk taramada 135 numaralı protokole yönelik tarama yapılırken, TCP olup olmadığına bakılmayıp port durumu "open filtered" olarak işaretlenmiştir. Ayrıca ilk taramada ekstra servis tespiti için parameter girilmesine ihtiyaç duyulmayıp varsayılan olarak protokolün kullanmış olduğu servis hakkında bilgi verir. İkinci taramadaki çıktıda Protokol başlığı yerine varsayılan Port başlığı adı altında 135/TCP belirtilip durumu open olarak işaretlenmiştir. Port üzerinde çalışan servis sürümünün tespiti için –sV parametresi kullanılır.
+Yukarıdaki nmap komutunda iki farklı özelliğe göre tarama yapılmıştır. İlk tarama komutu, –sO parametresi ile protokol taraması gerçekleştirileceği belirtilir. –p parametresine protokol numarası atanır. Detaylı çıktı olması için –v parametresi, DNS çözümlemesinin yapılmaması için –n parametresi kullanılmıştır.  İkinci tarama komutunda da port taraması yapılmıştır. İlk taramada 135 numaralı protokole yönelik tarama yapılırken, TCP olup olmadığına bakılmayıp port durumu open&#124;filtered olarak işaretlenmiştir. Ayrıca ilk taramada ekstra servis tespiti için parameter girilmesine ihtiyaç duyulmayıp varsayılan olarak protokolün kullanmış olduğu servis hakkında bilgi verir. İkinci taramadaki çıktıda Protokol başlığı yerine varsayılan Port başlığı adı altında 135/TCP belirtilip durumu open olarak işaretlenmiştir. Port üzerinde çalışan servis sürümünün tespiti için –sV parametresi kullanılır.
 
 #### 4.3.10 TCP FTP Bounce Scan (-b)
 
