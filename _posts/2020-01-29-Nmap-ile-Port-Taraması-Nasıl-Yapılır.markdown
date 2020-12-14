@@ -90,7 +90,7 @@ Gerçekleştirilen bir port taramasında açık port bulunursa, portta çalışa
 
 #### 4.2.1 Varsayılan Port Taraması
 
-Nmap veritabanında belirlenmiş olan 1000 tane portun taraması yapılır. Bu taramalar genellikle hızlı bir şekilde biter. Ayrıca taramaların kısa sürmesi açısından tarama türü üzerinde değişiklikler yapılabilir. “-n” parametresi ile DNS çözümlemesinin yapılmaması istenir. Böylelikle portlar üzerinde DNS çözümlemesi gerçekleştirilmeyip zamandan tasarruf ederek sonuçlar elde edilir.
+Nmap veritabanında belirlenmiş olan 1000 tane portun taraması yapılır. Bu taramalar genellikle hızlı bir şekilde biter. Ayrıca taramaların kısa sürmesi açısından tarama türü üzerinde değişiklikler yapılabilir. **-n** parametresi ile DNS çözümlemesinin yapılmaması istenir. Böylelikle portlar üzerinde DNS çözümlemesi gerçekleştirilmeyip zamandan tasarruf ederek sonuçlar elde edilir.
 
 ```linux
 root@Stormer:~# nmap 192.168.16.160
@@ -265,7 +265,7 @@ Yukarıdaki nmap komutunda iki farklı özelliğe göre tarama yapılmıştır. 
 
 #### 4.3.10 TCP FTP Bounce Scan (-b)
 
-FTP protokolünün Proxy FTP bağlantısı özelliği vardır. Bu özellik, kullanıcının bir FTP sunucusuna bağlanmasını ve ardından dosyaları üçüncü taraf bir sunucuya göndermesini sağlar. Bu özellikler saldırganlar tarafından kullanıldığı için az sunucu bu özelliği kullanır. Bir diğer dezavantaj ise FTP sunucusunun diğer hostları taramasına izin verilmesidir. Bu tarama ise FTP sunucu tespit ettiği zaman sırasıyla diğer hostlara dosya gönderir. Alınan hata mesajından portun açık olup olmadığı anlaşılmaktadır. Bu durum güvenlik duvarlarını atlatmak için kullanılır. Çünkü kurumsal FTP sunucuları, genellikle bütün ana bilgisayarların erişebilecekleri bir konuma koyulur. Bu tarama –b parametresi ile kullanılmaktadır. “kullanıcıadı:parola@ftpserver_IP:port” şeklinde argüman almaktadır.Port numarası girilmezse varsayılan 21. port üzerinden işlem yapmaktadır. Bir güvenlik duvarını atlatmak için sadece 21. port numarası taranıp ftp-bounce NSE dosyası kullanılabilir.
+FTP protokolünün Proxy FTP bağlantısı özelliği vardır. Bu özellik, kullanıcının bir FTP sunucusuna bağlanmasını ve ardından dosyaları üçüncü taraf bir sunucuya göndermesini sağlar. Bu özellikler saldırganlar tarafından kullanıldığı için az sunucu bu özelliği kullanır. Bir diğer dezavantaj ise FTP sunucusunun diğer hostları taramasına izin verilmesidir. Bu tarama ise FTP sunucu tespit ettiği zaman sırasıyla diğer hostlara dosya gönderir. Alınan hata mesajından portun açık olup olmadığı anlaşılmaktadır. Bu durum güvenlik duvarlarını atlatmak için kullanılır. Çünkü kurumsal FTP sunucuları, genellikle bütün ana bilgisayarların erişebilecekleri bir konuma koyulur. Bu tarama –b parametresi ile kullanılmaktadır. **kullanıcıadı:parola@ftpserver_IP:port** şeklinde argüman almaktadır.Port numarası girilmezse varsayılan 21. port üzerinden işlem yapmaktadır. Bir güvenlik duvarını atlatmak için sadece 21. port numarası taranıp ftp-bounce NSE dosyası kullanılabilir.
 
 ```linux
 root@Stormer:~# nmap -v -b anonymous:-wwwuser@192.168.16.128:21  192.168.16.128 -Pn
@@ -349,7 +349,7 @@ root@Stormer:~# nmap -T4 -Pn -p135,139,445 -v -n --max-rtt-timeout 200ms --initi
 
 - **–-defeat-rst-ratelimit** : Yalnızca açık portlara önem verildiğinde kullanışlıdır. Bu parametre kullanılarak hız sınırlamaları göz ardı edilir. Taramalarda RST cevabı için uzun bir süre beklenmediğinde, bazı portların yanıt vermeyeceği için doğruluğu azaltabilir.
 
-- **–-defeat-icmp-ratelimit** :  Hız için doğruluk sunan bir parametre olup ICMP hata mesajlarını hızlandıran hostlara karşı UDP tarama hızını arttırır. Yanıt vermeyen portları varsayılan olarak "open&#124;filtered" yerine "close&#124;filtered" olarak işaretler.
+- **–-defeat-icmp-ratelimit** :  Hız için doğruluk sunan bir parametre olup ICMP hata mesajlarını hızlandıran hostlara karşı UDP tarama hızını arttırır. Yanıt vermeyen portları varsayılan olarak open&#124;filtered yerine close&#124;filtered olarak işaretler.
 
 - **–-nsock-engine epoll&#124;kqueue&#124;poll&#124;select** : Bir nsock IO multiplexing motorunun kullanımını sağlamaktadır. **nmap –V** parametresi ile hangi motorların desteklediğini görülebilir.
 
