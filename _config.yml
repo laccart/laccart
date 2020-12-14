@@ -6,9 +6,9 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://kizilcinar.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 author_logo: profile.png
-author_email: "sedat@kizilcinar.com"
 
 # social links
 github_username:  laccart
 linkedin_username: SedatKizilcinar
 twitter_username: SedatKizilcinar
+mail_info: sedat@kizilcinar.com
