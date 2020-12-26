@@ -286,51 +286,67 @@ Eternalblue & Doublepulsar olarak adlandırılan zafiyet, smb üzerinden dll inj
 
 - **Adım1:**
 ![atgr37]({{ site.url }}/assets/img/Nessus/part2/resim37.png){: style="display: block; margin-left: auto; margin-right: auto; width: 70% "}
-
+<br/><br/>
 - **Adım2:**
+
 ![atgr38]({{ site.url }}/assets/img/Nessus/part2/resim38.png){: style="display: block; margin-left: auto; margin-right: auto; width: 70% "}
-
+<br/><br/>
 - **Adım3:**
+
 ![atgr39]({{ site.url }}/assets/img/Nessus/part2/resim39.png){: style="display: block; margin-left: auto; margin-right: auto; width: 70% "}
-
+<br/><br/>
 - **Adım4:**
+
 ![atgr40]({{ site.url }}/assets/img/Nessus/part2/resim40.png){: style="display: block; margin-left: auto; margin-right: auto; width: 70% "}
-
+<br/><br/>
 - **Adım5:**
+
 ![atgr41]({{ site.url }}/assets/img/Nessus/part2/resim41.png){: style="display: block; margin-left: auto; margin-right: auto; width: 70% "}
-
+<br/><br/>
 - **Adım6:**
+
 ![atgr42]({{ site.url }}/assets/img/Nessus/part2/resim42.png){: style="display: block; margin-left: auto; margin-right: auto; width: 70% "}
-
+<br/><br/>
 - **Adım7:**
+
 ![atgr43]({{ site.url }}/assets/img/Nessus/part2/resim43.png){: style="display: block; margin-left: auto; margin-right: auto; width: 70% "}
-
+<br/><br/>
 - **Adım8:**
+
 ![atgr44]({{ site.url }}/assets/img/Nessus/part2/resim44.png){: style="display: block; margin-left: auto; margin-right: auto; width: 70% "}
-
+<br/><br/>
 - **Adım9:**
+
 ![atgr45]({{ site.url }}/assets/img/Nessus/part2/resim45.png){: style="display: block; margin-left: auto; margin-right: auto; width: 70% "}
-
+<br/><br/>
 - **Adım10:**
+
 ![atgr46]({{ site.url }}/assets/img/Nessus/part2/resim46.png){: style="display: block; margin-left: auto; margin-right: auto; width: 70% "}
-
+<br/><br/>
 - **Adım11:**
+
 ![atgr47]({{ site.url }}/assets/img/Nessus/part2/resim47.png){: style="display: block; margin-left: auto; margin-right: auto; width: 70% "}
-
+<br/><br/>
 - **Adım12:**
+
 ![atgr48]({{ site.url }}/assets/img/Nessus/part2/resim48.png){: style="display: block; margin-left: auto; margin-right: auto; width: 70% "}
-
+<br/><br/>
 - **Adım13:**
+
 ![atgr49]({{ site.url }}/assets/img/Nessus/part2/resim49.png){: style="display: block; margin-left: auto; margin-right: auto; width: 70% "}
-
+<br/><br/>
 - **Adım14:**
+
 ![atgr50]({{ site.url }}/assets/img/Nessus/part2/resim50.png){: style="display: block; margin-left: auto; margin-right: auto; width: 70% "}
-
+<br/><br/>
 - **Adım15:**
+
 ![atgr51]({{ site.url }}/assets/img/Nessus/part2/resim51.png){: style="display: block; margin-left: auto; margin-right: auto; width: 70% "}
-
+<br/><br/>
 - **Adım16:**
-![atgr52]({{ site.url }}/assets/img/Nessus/part2/resim52.png){: style="display: block; margin-left: auto; margin-right: auto; width: 70% "}
 
+![atgr52]({{ site.url }}/assets/img/Nessus/part2/resim52.png){: style="display: block; margin-left: auto; margin-right: auto; width: 70% "}
+<br/><br/>
 - **Adım17:**
+
 ![atgr53]({{ site.url }}/assets/img/Nessus/part2/resim53.png){: style="display: block; margin-left: auto; margin-right: auto; width: 70% "}
