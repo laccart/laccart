@@ -48,8 +48,6 @@ Nesus'un Settings sekmesinde kullanıcı ve sunucu taraflı ayarlamalar yapılı
 - Accounts
 - My Account
 
-<br/><br/>
-
 - **Settings -> Advanced Settings**
 
 Global ayarları manuel olarak yapılandırmamıza izin verir. Nessus servisi veya sunucunun yeniden başlatılması gerekebilir.
@@ -146,7 +144,6 @@ Nessus'un taramalar sekmesinde yapılan taramaların bulunduğu klasörler ve ta
         - Customized Reports
         - Scanners
 
-<br/><br/>
 
 - **Folders -> My Scans**
 
