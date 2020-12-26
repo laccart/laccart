@@ -40,6 +40,7 @@ Açık portların tespit edilmesinden sonra paralel olarak her bir porta yöneli
 |:--:|
 | *Şekil 5.a : NULL probu için TCP bağlantısı* |
 
+<br/>
 
 Şekil 5.a’da, NULL prob bağlantıları dört portta bulunan servislere yönelik başarılı bir şekilde uygulanmıştır.
 
@@ -47,6 +48,7 @@ Açık portların tespit edilmesinden sonra paralel olarak her bir porta yöneli
 |:--:|
 | *Şekil 5.b : NULL Probunun Kullanıldığı Gösterimi* |
 
+<br/>
 
 Şekil 5.b’de NULL probe kullanılarak FTP servisinin sürüm bilgisi tespit edilmiştir.
 
@@ -54,6 +56,7 @@ Açık portların tespit edilmesinden sonra paralel olarak her bir porta yöneli
 |:--:|
 | *Şekil 5.c : SMTP sürüm keşfi* |
 
+<br/>
 
 Şekil 5.c'de 25 numaralı portta posta sunucusunun tespit edildiği gösterilmiştir. Normal şartlarda ne tür bir posta sunucusu olduğu bilinmemektedir. Dikkatli bakıldığında posta sunucusunun sürüm bilgisi olarak ESMTP Postfix olduğu görülmektedir. Nmap, SMTP ile eşleştiği için yalnızca SMTP sunucularını eşleştirebilen problar denenir.
 

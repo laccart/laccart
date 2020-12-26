@@ -45,6 +45,7 @@ Microsoft ATA, tehditlere bir saldırgan bakış açısı ile bakarak savunma me
 |:--:|
 | *Şekil 1 : Microsoft ATA kill-chain gösterimi* |
 
+<br/>
 
 ## Microsoft ATA Mimarisi
 
@@ -52,11 +53,15 @@ Microsoft ATA, tehditlere bir saldırgan bakış açısı ile bakarak savunma me
 |:--:|
 | *Şekil 2 : Microsoft ATA Mimarisinin Gösterimi* |
 
+<br/>
+
 Şekil 2’de gösterildiği gibi Microsoft ATA, fiziksel ve sanal anahtarlar ile bir ATA Gateway’e port mirroring yaparak Domain Controller ağ trafiğini izleyebilir. ATA Lightweight Gateway doğrudan domain controller’a eklenilirse port mirroring yapmaya gerek kalmaz. ATA, Windows loglarını herhangi bir SIEM sunucusuna veya bir Domain Controller makinesine gönderebilir. Gönderilen loglar SIEM sunucularında toplandıktan sonra saldırılar ve risk oluşturacak tehditler ile ilgi verilerin analizi yapılır. Analiz sonucunda gerekli güvenlik tedbirlerinin alınması için bilgilendirmede bulunmaktadır.
 
 | ![atgr2]({{ site.url }}/assets/img/MicrosoftATA/ATAcenter_ATAgateway.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
 | *Şekil 3 : ATA Center ve ATA Gateway Gösterimi* |
+
+<br/>
 
 Şekil 3 üzerinde gösterilen birimler ve bileşenler Microsoft ATA yapısı içerisindeki bileşenlerin ağ trafiği üzerinde toplanan verilerin işleyişinden ATA Center’a gönderilmesi sürecini göstermektedir.
 
@@ -83,6 +88,7 @@ ATA Gateway ve ATA Lightweight Gateway’den ayrıştırılmış ağ trafiğini 
 |:--:|
 | *Tablo 1 : ATA Center Ana Bileşenleri* |
 
+<br/>
 
 Bir tane ATA Center, bir Active Directory Forest’ı izleyebilir. Birden çok Active Directory Forest olması halinden her bir forest için bir ATA Center oluşturulmalıdır. Büyük bir Active Directory kapsamını tek bir ATA Center taşıyamadığı için ATA Center sayısı arttırılmalıdır.
 
@@ -102,7 +108,7 @@ Ağ trafiğini ve Windows loglarını alıp ATA Center makinesine göndermektedi
 |:--:|
 | *Tablo 2 : ATA Gateway Ana Bileşenleri* |
 
-
+<br/>
 
 ### ATA Lightweight Gateway
 ATA Gateway’e alternatif olarak yapılmıştır. Port mirroring yapılmadan yerelde Domain Contoller makinesi üzerindeki trafiği inceleyip ayrıştırdıktan sonra ATA Center’a göndermektedir.
@@ -130,6 +136,8 @@ Microsoft ATA üzerinde davranış analizi için ATA Center’a en az 30 günlü
 |:--:|
 | *Tablo 3 : ATA Center Boyutlandırma Özellikleri* |
 
+<br/>
+
 ### ATA Lightweight Gateway Boyutlandırması
 ATA Lightweight Gateway boyutlandırılması Domain Controller’ın oluşturduğu ağ trafiğini göz önüne alarak yapılmaktadır. Trafiğin miktarı ile doğru orantılı bir şekildedir. Tablo 4 üzerinde belirtilen özellikler doğrultusunda boyutlandırma işlemleri gerçekleştirilebilir.
 
@@ -138,6 +146,7 @@ ATA Lightweight Gateway boyutlandırılması Domain Controller’ın oluşturdu�
 |:--:|
 | *Tablo 4 : ATA Lightweight Gateway Boyutlandırma Özellikleri* |
 
+<br/>
 
 Tablo 4’te Domain Controller üzerinde geçen trafiğin bir saniyedeki paket sayısının toplamı, Domain Controller’ın yüklediği çekirdek sayısı ve takılı olan belleğin toplam miktarı belirtilmektedir. Domain Controller makinesinde belirtilen özellikler yoksa veya eksik ise Domain Controller makinesinin performansında bir değişiklik olmamaktadır. Fakat ATA Lightweight Gateway verimli çalışmayabilir.
 
@@ -150,6 +159,8 @@ ATA Gateway dağıtımlarında bazı özelliklere dikkat etmek gerekmektedir. AT
 | ![atgr7]({{ site.url }}/assets/img/MicrosoftATA/tablo5.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
 | *Tablo 5 : ATA Gateway Boyutlandırma Özellikleri* |
+
+<br/>
 
 Tablo 5 üzerindeki özelikler, ATA Gateway tarafından izlenen Domain Controller’larda bir saniyedeki ortalama paket sayısının toplamı ve Domain Controller ile port mirroring trafiğinin toplam miktarıdır. Ayrıca Çekirdek kullanımı sırasında, hiper iş parçacığı devre dışı bırakılmalıdır. Gerçek çekirdeklerin sayılması gerekmektedir.
 
@@ -180,20 +191,25 @@ Microsoft ATA’nın kurulumunu yapmadan önce gereksinimlerinin eksiksiz bir ş
 |:--:|
 | *Şekil 4 : Microsoft ATA Center Setup Dosyasının Görünümü* |
 
+<br/>
+
 Şekil 4’te gösterilen kurulum dosyası Microsoft web sitesi üzerinden indirilerek çalıştırılmıştır. Şekil 5’te .NET kurulumu gerçekleştirilmektedir.
 
 | ![atgr9]({{ site.url }}/assets/img/MicrosoftATA/sekil5.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
 | *Şekil 5 : .NET kurulumunun gerçekleştirilmesi* |
 
+<br/>
+
 .NET kurulumu sonucunda makineniz otomatik olarak yeniden başlatılabilir. Şekil 6, ATA’nın dil seçim özelliğini göstermektedir.
 
+<br/>
 
 | ![atgr10]({{ site.url }}/assets/img/MicrosoftATA/sekil6.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
 | *Şekil 6 : Kurulum sırasında ATA dil seçme ekranı* |
 
-
+<br/>
 
 Şekil 6'da ATA’nın 1.9.7312 sürümünü yükleyeceğiz. Ayrıca ATA’nın hangi dilde kullanılması gerektiğini belirtebiliriz. Şekil 7'de lisans şartları gösterilmektedir.
 
@@ -202,6 +218,7 @@ Microsoft ATA’nın kurulumunu yapmadan önce gereksinimlerinin eksiksiz bir ş
 |:--:|
 | *Şekil 7 : ATA lisans şartları* |
 
+<br/>
 
 Şekil 7'de ATA’yı bu lisans koşulları altında kullanacağımızı belirterek **I accept the Microsoft Software License Terms** alanı işaretlenip **Next** butonuna tıklanmalıdır.
 
@@ -210,6 +227,7 @@ Microsoft ATA’nın kurulumunu yapmadan önce gereksinimlerinin eksiksiz bir ş
 |:--:|
 | *Şekil 8 : ATA’nın Güncelleme Aşaması* |
 
+<br/>
 
 Şekil 8'de ATA’nın otomatik güncelleme ayarlaması önerilmektedir. Bilgisayarınızda Microsoft Update otomatik olarak işaretlenmiş ise bilgisayarınız güvenli ve sorunsuz bir şekilde işleyişini sağlamak için güncelleştirmeleri yapacaktır.
 
@@ -218,7 +236,7 @@ Microsoft ATA’nın kurulumunu yapmadan önce gereksinimlerinin eksiksiz bir ş
 |:--:|
 | *Şekil 9 : Konfigürasyon dosyalarının dizinleri* |
 
-
+<br/>
 
 Şekil 9’da kurulum dosyalarının varsayılan olarak yüklendiği dizini ve veritabanı (MongoDB) dosyalarının yükleneceği dizini göstermektedir. Ayrıca kullanılan sertifikanın oluşturulması için işaretlenmesi gerekmektedir. Sertifikanın süresi bitmeden yenisini oluşturulması gerekmektedir. **Install** butonuna tıklayarak yükleme işlemini başlatılmaktadır.
 
@@ -227,6 +245,7 @@ Microsoft ATA’nın kurulumunu yapmadan önce gereksinimlerinin eksiksiz bir ş
 |:--:|
 | *Şekil 10 : Kurulum işleminin devam etmesi* |
 
+<br/>
 
 Şekil 10’da MongoDB ve Microsoft ATA kurulumlarının yüklenme sürecini göstermektedir. Yükleme işleminin tamamlanması şekil 8’de gösterilmektedir.
 
@@ -235,6 +254,7 @@ Microsoft ATA’nın kurulumunu yapmadan önce gereksinimlerinin eksiksiz bir ş
 |:--:|
 | *Şekil 11 : Yüklemenin Tamamlanması* |
 
+<br/>
 
 Şekil 11’de gösterildiği gibi Microsoft ATA’nın kurulumu başarılı bir şekilde tamamlanmıştır.
 
@@ -243,6 +263,7 @@ Microsoft ATA’nın kurulumunu yapmadan önce gereksinimlerinin eksiksiz bir ş
 |:--:|
 | *Şekil 12 : Microsoft ATA Web Paneli* |
 
+<br/>
 
 Şekil 12’de gösterildiği gibi kuruluma 3 aşamalı bir şekilde devam edilmektedir. Öncelikle ATA’nın var olan domain ile bağlantısınınoluşturmak için kimlik bilgileri ve domain adı bilgilerine ihtiyaç duyulmaktadır. Bu işlemler, şekil 10 gösterilmektedir.
 
@@ -251,6 +272,7 @@ Microsoft ATA’nın kurulumunu yapmadan önce gereksinimlerinin eksiksiz bir ş
 |:--:|
 | *Şekil 13 : ATA’nın domain’e bağlanması* |
 
+<br/>
 
 Şekil 13'te gösterildiği gibi sorunsuz bir şekilde domain ile ATA’nın test bağlantısı başarılı bir şekilde gerçekleştirilmiştir. Bu işlem **Save** butonuna tıklanarak kaydedilir.
 
@@ -259,6 +281,7 @@ Microsoft ATA’nın kurulumunu yapmadan önce gereksinimlerinin eksiksiz bir ş
 |:--:|
 | *Şekil 14 : ATA Gateway dosyasının indirilmesi* |
 
+<br/>
 
 Şekil 14’te gösterildiği gibi Domain Controller makinası üzerinde kurulmak üzere Gateway Setup butonuna tıklayarak ATA Gateway kurulum dosyasını indirilmektedir. İndirilen kurulum dosyası içerinde ATA Gateway ve ATA Lightweight Gateway kurulumu dosyalarını kapsamaktadır.
 
@@ -267,7 +290,7 @@ Microsoft ATA’nın kurulumunu yapmadan önce gereksinimlerinin eksiksiz bir ş
 |:--:|
 | *Şekil 15 : ATA Lighweight Gateway Kurulumu* |
 
-
+<br/>
 
 Şekil 15’te indirilen AT Gateway Setup dosyasının kurulumu başlatılmasıyla ATA Lightweight Gateway 1.9.7312 sürümü Domain Controller makinesine yüklenecektir. Gösterildiği gibi ATA Lightweight Gateway’in kullanacağı dil seçilmelidir.
 
@@ -276,6 +299,7 @@ Microsoft ATA’nın kurulumunu yapmadan önce gereksinimlerinin eksiksiz bir ş
 |:--:|
 | *Şekil 16 : ATA Lighweight Gateway Gereksinimleri* |
 
+<br/>
 
 Şekil 16'da ATA Lightweight Gateway’in kurulum sırasında sunucunun minimum gereksinimleri karşılayıp karşılamadığının kontrolü için bilgilendirmeler bulunmaktadır. Ayrıca Vmware üzerinde bulunan bir Domain Controller makinesi üzerinde kurulumu ile ilgili uyarı ve bilgilendirmeleri yapmaktadır. Bu gereksinimlerin karşılanması durumunda **Next** butonuna tıklanarak kurulum yapılabilmektedir.
 
@@ -284,7 +308,7 @@ Microsoft ATA’nın kurulumunu yapmadan önce gereksinimlerinin eksiksiz bir ş
 |:--:|
 | *Şekil 17 : Lighweight konfigürasyon dosyalarının dizini* |
 
-
+<br/>
 
 Şekil 17’de gösterilen Gateway kurulumu için gerekli konfigürasyon dosyalarının yükleneceği dizini göstermektedir. Bu işlemlerden sonra **Install** butonu tıklanması ile kurulum başlatılabilir. Kurulum süreci şekil 18 üzerinde gösterilmektedir.
 
@@ -292,7 +316,7 @@ Microsoft ATA’nın kurulumunu yapmadan önce gereksinimlerinin eksiksiz bir ş
 |:--:|
 | *Şekil 18 : ATA Lighweight Gateway kurulum süreci* |
 
-
+<br/>
 
 Şekil 18’de gösterildiği gibi ATA Lightweight Gateway kurulumu yapılmaktadır. Kurulum tamamlandıktan sonra Şekil 19’daki görüntü elde edilebilir.
 
@@ -300,6 +324,8 @@ Microsoft ATA’nın kurulumunu yapmadan önce gereksinimlerinin eksiksiz bir ş
 | ![atgr23]({{ site.url }}/assets/img/MicrosoftATA/sekil19.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
 | *Şekil 19 : ATA Lighweight Gateway’in başlatılması* |
+
+<br/>
 
 Şekil 19’da görüldüğü gibi kurulan ATA Lightweight Gateway çalıştırılmaya başlanmıştır. Herhangi bir hata vermeden kurulum başarılı bir şekilde tamamlanmıştır.
 

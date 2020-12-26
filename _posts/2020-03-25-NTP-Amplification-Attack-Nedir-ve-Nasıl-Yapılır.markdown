@@ -40,12 +40,15 @@ Belirtilen beş adım şekil1’de gösterilmektedir.
 |:--:|
 | *Şekil1 : NTP Amplification saldırısının gösterimi* |
 
+<br/>
 
 Şekil1’de saldırgan, hedef sistemin IP adresini oluşturulan zararlı UDP istekleri içerisindeki kaynak IP adresi olarak belirtmektedir. UDP isteklerini botnet kullanarak NTP sunucularına gönderir. UDP paketleri herhangi bir el sıkışma (handshake) gerektirmediği için, NTP sunucusu, isteğin gerçek olup olmadığını doğrulamadan, büyük boyutlu yanıt verir. Verilen yanıt, gönderilen isteğin içerisindeki kaynak IP adresine gönderilir. Böylece, hedef sistem göndermemiş olduğu UDP isteklerin doğurduğu büyük yanıtlara maruz kalır. NTP sunucuları, DDoS amplifikasyon saldırıları için büyük bir kaynak olarak kullanılabilir.
 
 | ![atgr2]({{ site.url }}/assets/img/NTPAmplification/resim1.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
 | *Resim1: Shodan Kullanılarak 4.2.7’den düşük sürümlü NTP sunucularının gösterimi* |
+
+<br/>
 
 Resim1’de, Shodan kullanılarak 4.2.7 sürümünden önceki NTP sürümleri gösterilmektedir. “port:123 protocolversion:3” komutu kullanılarak, 123 numaralı port üzerinde ve protokol sürümü 3 olan 6.096.865 tane NTP sunucusu listelenmektedir.
 
@@ -65,21 +68,30 @@ ihtiyaç duyulmaktadır. NTP sunucularına yapılacak istekler için NTPDoser ad
 |:--:|
 | *Resim2: NTPDoser aracının gösterimi* |
 
+<br/>
+
 NTPDoser aracı, “Clone or Download” butonuna tıkladıktan sonra gelen “Download ZIP” butonuna tıklanarak indirilebilir. Ayrıca, Resim3’te NTPDoser aracının klonu indirilmiştir.
 
 ```linux
 root@Stormer:~# git clone https://github.com/DrizzleRisk/NTPDoser.git
 ```
+<br/>
 
 NTPDoser aracı, ZIP olarak indirmek dışında klonlanabilir. Aşağıda, indirilen C++ kaynak kodu derlenmektedir.
 
 ```linux
 root@Stormer:~/NTPDoser# gcc NTPDoser.cpp  -o NTPDoser  -lstdc++  -pthread
 ```
+
+<br/>
+
 Yukarıdaki komutunun çalıştırılması ile NTPDoser.cpp dosyası derlenerek NTPDoser çalıştırılabilir dosyası oluşturulur.
+
 ```linux
 root@Stormer:~/NTPDoser# ./NTPDoser 104.28.28.246 3 10
 ```
+<br/>
+
 Yukarıda, NTPDoser aracı ile NTP Amplification saldırısı yapılmıştır. 104.28.28.246 IP adresine yönelik NTP Amplification saldırısını 3 farklı thread’den 10 saniye içerisinde yapmaktadır.
 
 ## NTP Amplification Saldırılarına Karşı Koruma

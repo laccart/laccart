@@ -14,6 +14,8 @@ thumbnail: posts/dns.png
 |:--:|
 | *Resim1 : DNS Amplification Saldırısının Gösterimi* |
 
+<br/>
+
 Resim1’de bir saldırgan, botnet kullanarak herkese açık DNS çözümleyicilerine, kaynak IP adresi alanına hedef IP adresini atayarak bir istek gönderiyor. Saldırganın göndermiş olduğu istek, dönecek yanıtın büyük boyutlarda olması için oluşturulmuş zararlı bir istektir. Saldırganın yapmış olduğu bu saldırı türü DNS Amplification saldırısı olarak bilinir. Böylece hedef nereden geldiği bilinmeyen yanıtlara maruz kalabilir.
 
 Bir DNS Amplification saldırısı 6 adımda gerçekleştirilir:
@@ -45,12 +47,16 @@ Saldırganların amaçlarından biri, küçük boyutta DNS istekleri yaparak dah
 |:--:|
 | *Resim2 : DNS Amplification Saldırısının Gösterimi* |
 
+<br/>
+
 Resim 2: Varsayılan DNS isteğine dönen DNS yanıtının boyut karşılaştırması
 Resim2’deki varsayılan DNS isteğinin boyutu 30 bayt ve alınan yanıtın boyutu 45 bayttır. Bant genişliğindeki amplifikasyon faktörü, verilen yanıt boyutunun, isteğin boyutundan fazla olmasına neden olabilir. Saldırganların amacı, hedefe daha büyük boyutlarda yanıtlar gönderilmesini sağlamaktır. Bu nedenle saldırganlar amplifikasyon faktörünü tetikleyerek DNS Amplification saldırısı gerçekleştirebilirler. Bu saldırıyı yapmanın bir yolu, example.com adresinin IP adresini öğrenmek yerine DNS kayıtlarını elde etmek için istekte bulunmaktır. Yapılan isteğe verilen yanıt; alt alan adları (subdomains), yedekleme sunucuları (backup servers), posta sunucuları (mail servers), takma adları (aliases) vb. bilgiler içerebilir. Aniden yapılan 10 baytlık bir DNS isteği, 10, 20 hatta 50 kat daha büyük boyutta bir yanıtın dönmesine neden olabilir. Resim 3’te zararlı bir DNS isteği ve alınan yanıtın karşılaştırıldığı bir görsel yer almaktadır.
 
 | ![atgr3]({{ site.url }}/assets/img/DNSAmplification/resim3.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
 | *Resim3 : Zararlı DNS isteğine verilen DNS yanıtının gösterimi* |
+
+<br/>
 
 Resim3’te 30 baytlık özel hazırlanmış DNS isteğine karşılık DNS çözümleyicisi 1500 baytlık bir yanıt döndürmektedir. Saldırgan, hedef  sisteme yönelik bir istek yerine birden çok istekte bulunduğunda sunucunun isteklere döndüreceği yanıtın boyutu katlanır. Böylece saldırgan ağ trafiğini yavaşlatabilir, hatta ağ trafiğini engelleyebilir.
 
@@ -62,11 +68,15 @@ Saldırganlar kaynak IP adresi manipülasyonu yaparak, DNS isteklerinde kaynak I
 |:--:|
 | *Resim4 : Hedef IP adresini kullanarak DNS Çözümleyicisine istek göndermek* |
 
+<br/>
+
 Resim 4’te hedef IP adresi ile DNS çözümleyicisine istekte bulunan bir saldırgan yer almaktadır. Saldırgan, hedef sistemin IP adresini 30 baytlık zararlı DNS paketinin içerisine kaynak IP adresi olarak atadıktan sonra DNS çözümleyicisine istek gönderir. DNS çözümleyicisi ise aldığı zararlı isteğe yanıt olarak, hedef sisteme 1500 bayt boyutunda bir yanıt gönderir. Böylece saldırıyı gerçekleştiren saldırganın kim olduğu bilinmez. Bu tür saldırıların avantajı, saldırganın fazla sayıda kaynağa ihtiyaç duymamasıdır. Saldırının gerçekleştirilmesi için bir kaynak IP adresinin olması yeterlidir. Nispeten az miktarda kaynak ve çaba ile bir saldırgan, hedef sitenin performansını önemli ölçüde azaltabilir, hatta tamamen kapanmasını sağlayacak miktarda DNS isteği gönderebilir.
 
 | ![atgr5]({{ site.url }}/assets/img/DNSAmplification/resim5.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
 | *Resim5 : Birden çok DNS Çözümleyicisi ile yapılan DNS Amplification saldırısı* |
+
+<br/>
 
 Resim5’te, bir saldırgan, hedef sistemdeki ağ trafiğini yavaşlatmak veya sistemi tamamen servis dışı bırakmak için birden çok DNS çözümleyicisi üzerinden DNS Amplification saldırısı gerçekleştirmektedir. Saldırgan, performans harcamak yerine birden çok kaynaktan düşük boyutta yapacağı zararlı isteklerle hedef sistemi servis dışı bırakabilir.
 
@@ -82,6 +92,8 @@ DNS Amplification saldırısı yapabilmek için öncelikle saldırganın interne
 |:--:|
 | *Resim6 : Herkese Açık DNS Çözümleyicileri* |
 
+<br/>
+
 Resim 6’da herkese açık DNS çözümleyicileri yer almaktadır. Böylece, saldırgan oluşturacağı zararlı bir istek ile Resim6’da yer alan DNS çözümleyicilerine istekte bulunabilir. Resim 6’da, ülkelere göre yapılan filtreleme sonucunda herkese açık DNS çözümleyicileri yer almaktadır. Resim7’de DNS çözümleyicisine istekte bulunmak için derlenmiş olan bir C kodu yer almaktadır.
 
 ```linux
@@ -90,6 +102,7 @@ root@Stormer:~# wget https://raw.githubusercontent.com/nullsecuritynet/tools/mas
 ..
 root@Stormer:~# gcc dnsdrdos.c -o dnsdrdos -Wall -ansi
 ```
+<br/>
 
 Yukarıda, “wget” komutu kullanılarak DNS çözümleyicisine istekte bulunmak için kullanılacak olan “dnsdrdos.c” dosyası indirildi. “gcc” programı ile kod parçası derlendikten sonra çalıştırılmaya hazır hale getirildi. Resim7’de herkese açık DNS çözümleyicilerinden 6 tanesi gösterilmektedir.
 
@@ -97,11 +110,14 @@ Yukarıda, “wget” komutu kullanılarak DNS çözümleyicisine istekte bulunm
 |:--:|
 | *Resim7 : Herkese açık birkaç DNS çözümleyicisi* |
 
+<br/>
+
 Resim7’de, 6 tane DNS çözümleyicisinin IP adresleri publicDns.txt dosyası içerisinde bulunmaktadır. Böylece yapılan DNS istekleri, publicDns.txt dosyası içerisindeki DNS çözümleyicilerine gönderilir. 
 
 ```linux
 root@Stormer:~# ./dnsdrdos -f publicDns.txt -s 192.168.30.1 -l 100000000000
 ```
+<br/>
 
 **–f** parametresi ile herkesin erişimine açık olan birkaç DNS çözümleyicisinin IP adresinin olduğu dosya belirtildi. –s parametresi ile ise DNS çözümleyicilerine gönderilecek istek üzerinde kaynak IP manipülasyonu yapılarak 192.168.30.1 IP adresi kaynak IP adresi olarak belirtildi. -l parametresi ile gönderilecek paket sayısı belirtildi.
 
@@ -110,6 +126,8 @@ root@Stormer:~# ./dnsdrdos -f publicDns.txt -s 192.168.30.1 -l 100000000000
 | ![atgr8]({{ site.url }}/assets/img/DNSAmplification/resim8.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
 | *Resim8 : Saldırı esnasında hedef makine üzerinden ağın izlenmesi* |
+
+<br/>
 
 Resim8’de Wireshark aracı kullanılarak ağ trafiğinin izlenmesi sonucunda yakalanan istekler yer almaktadır. Hedef makine üzerinden DNS çözümleyicilerine herhangi bir istek yapılmadığı halde, hedef makinenin IP adresi kullanılarak, DNS çözümleyicilerine 70 bayt boyutunda paketler gönderildi. Böylece hedef sisteme yönelik DNS Amplification saldırısı yapıldığı doğrulandı.
 

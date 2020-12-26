@@ -15,7 +15,7 @@ thumbnail: posts/deepfake.jpg
 |:--:|
 | *Şekil 1 : DeepFake Tekniği ile Oluşan Görüntü* |
 
-
+<br/>
 
 Deepfake tekniği, çoğunlukla iki makine öğrenmesi modelinden oluşan üretken ters ağlar (Generative Adversarial Networks - GAN) adı verilen bir teknolojiyi kullanmaktadır. GAN’daki bir model, sahte video görüntülerini oluşturmak için bir veri setinden yararlanırken, diğer model sahte görüntüleri algılamaya çalışmaktadır. İki model, biri diğerini tespit edinceye kadar birlikte çalışır. GAN teknolojisi, ilk olarak 2014 yılında Lan Goodfellow ve Montreal Üniversitesindeki araştırmacılar tarafından yayınlandı. Amaç, bilim endüstrisindeki astronomik görüntüleri geliştirmesini veya video oyunu geliştiricilerin oyunlarının kalitesini yükseltmelerini sağlamaktır. 
 
@@ -24,7 +24,7 @@ Deepfake tekniği, çoğunlukla iki makine öğrenmesi modelinden oluşan üretk
 |:--:|
 | *Şekil 2 : DeepFake Tekniği ile Oluşan Video Görüntüsü* |
 
-
+<br/>
 
 Video manipülasyonu yıllardır olmasına rağmen, GAN teknolojisi için kullanılan makine öğrenmesi ve yapay zeka araçları yeni bir gerçeklik seviyesini getirmiştir. Örnek olarak, 2018 yılında ortaya çıkan FaceApp uygulaması, yüzlerin sentezlenmesi için yüzlerce görüntünün kullanılmasına ihtiyaç duymaktadır. Ayrıca, App Zao gibi uygulamalar deepfake tekniği ile yüz takası gibi işlemler gerçekleştirmek için görüntüleri kullanması gerekmektedir. 
 
@@ -37,7 +37,7 @@ Birinin imajını ve davranışını taklit etme yeteneği ile saldırgan, kurba
 |:--:|
 | *Şekil 3 : DeepFake Tekniği ile Oluşan Görüntü* |
 
-
+<br/>
 
 Teknoloji endüstrisi, bir bütün olarak deepfake tekniğinin algılanması için yatırımlar yapmaya başlamıştır. Deepfake ses kliplerin görsel sunumlarını kullanan, konuşma sentezini modellerini eğitmek için kullanılan derin sinir ağı olan seslerin derinliği için geliştirilen açık kaynaklı RealTalk uygulaması piyasaya sürüldü. Ayrıca sahte video görüntüleri ve ses kayıtları ile ilgili araştırma yapan araştırmacılara Facebook, Microsoft ve Google gibi büyük şirketler sponsor olmaktadır.
 

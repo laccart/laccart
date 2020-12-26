@@ -43,11 +43,13 @@ Veritabanı üzerindeki işlemlerin istemci ile akışının sağlanması için 
 |:--:|
 | *Şekil1 : Basit Bir TDS Oturumu (Login Request)* |
 
+<br/>
 
 | ![atgr2]({{ site.url }}/assets/img/TDS/TDS-sekil2.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
 | *Şekil2 : TDS Request Gönderimi* |
 
+<br/>
 
 ## PROTOCOL DATA UNITS(PDUs)
 PDU, istemci(request) ve sunucu(response) içeriği için kullanılıp request/response birkaç PDU içerebilir. İletişim kurma işlemi, PDU’nun boyutu oturum açma süresi boyunca istemci ve sunucu arasında kararlaştırılır. PDU, header ve genellikle data içermektedir.
@@ -72,6 +74,7 @@ PDU header, PDU’nun boyutu ve içeriği ile birlikte bir request/response sonu
 |:--:|
 | *Şekil3 : Mesaj Tampon Başlığının gösterimi* |
 
+<br/>
 
 ### PDU DATA
 PDU’lar genellikle bazı verileri içerir.

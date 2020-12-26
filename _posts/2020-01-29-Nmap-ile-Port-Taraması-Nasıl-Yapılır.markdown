@@ -194,6 +194,7 @@ Bu tarama yöntemi, hedefe yönelik kör bir TCP tarama yapılmasını sağlamak
 |:--:|
 | *Şekil4.3.8.a – TCP IDLE SCAN Port Durumlarının Gösterimi* |
 
+<br/>
 
 Şekil 4.3.8.a ‘da gösterildiği gibi TCP Idle Scan taramasında port durumları IP ID fragmentation işlemine göre belirlenir.
 

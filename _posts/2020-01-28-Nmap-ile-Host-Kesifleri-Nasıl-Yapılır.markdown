@@ -368,6 +368,7 @@ Hedefi daha etkili bir şekilde tarama için parametrelerin tümünü bilmekten 
 |:--:|
 | *Şekil3.7.a : Taramada Kullanılacak Olan Probların Başarı Yüzdeleri* |
 
+<br/>
 
 | ![atgr2]({{ site.url }}/assets/img/Nmap/part2/sekil37b.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|

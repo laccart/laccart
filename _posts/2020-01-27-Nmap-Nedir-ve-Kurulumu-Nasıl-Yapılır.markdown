@@ -83,6 +83,7 @@ Nmap aracının Windows ortamındaki kurulumunu sağlamak için http://nmap.org/
 |:--:|
 | *Şekil 2.2.1 : Windows Ortamı için İndirme İşlemi* |
 
+<br/>
 
 Daha sonra indirilen .exe uzantılı nmap setup’ı yönetici olarak çalıştırılmaktadır.
 
@@ -90,6 +91,7 @@ Daha sonra indirilen .exe uzantılı nmap setup’ı yönetici olarak çalışt�
 |:--:|
 | *Şekil 2.2.2 : Windows Kurulum Gösterimi* |
 
+<br/>
 
 Kurulum işlemi bittikten sonra Program Files(x86)\Nmap dizinin altındaki nmap.exe uygulaması çalıştırılabilir. Ayrıca bu kurulumla birlikte Nmap’in grafik kullanıcı arayüzlü hali olan zenmap uygulaması da yüklenecektir.
 
@@ -97,8 +99,7 @@ Kurulum işlemi bittikten sonra Program Files(x86)\Nmap dizinin altındaki nmap.
 |:--:|
 | *Şekil 2.2.3 : Command Prompt Ekranında Nmap* |
 
-
-
+<br/>
 
 Şekil 2.2.3’te Command Prompt ekranı üzerinde nmap.exe çalıştırılmıştır.
 
@@ -106,5 +107,6 @@ Kurulum işlemi bittikten sonra Program Files(x86)\Nmap dizinin altındaki nmap.
 |:--:|
 | *Şekil 2.2.4 – Windows Ortamında ZenMap Uygulamasının Çalıştırılması* |
 
+<br/>
 
 Şekil 2.2.3 ve Şekil 2.2.4’te gösterildiği gibi Nmap ve Zenmap araçları Linux ortamında da mevcuttur. Terminal üzerinden nmap ve zenmap komutu çalıştırılarak görüntülenebilir.

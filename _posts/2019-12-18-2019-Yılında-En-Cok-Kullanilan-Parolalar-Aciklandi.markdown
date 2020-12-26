@@ -17,6 +17,7 @@ Kullanılan en yaygın parolalar ise, **12345, 123456, 123456789, test1 ve passw
 |:--:|
 | *Resim 1 : 2019 Yılında En Çok Kullanılan Parolalar* |
 
+<br/>
 
 Kullanıcıların, parolalarını değiştirmemelerinin sebepleri arasında, parolayı kolayca hatırlamak istemeleridir. Bundan dolayı, insanlar parolalarını uzun ve karmaşık koyduklarında hatırlamayacaklarını düşündükleri için zayıf parolaları kullanmayı tercih etmektedir. Diğer sebebi ise, kullanıcının saklayacak bir şeyinin olmadığını düşünmesidir. 
 
