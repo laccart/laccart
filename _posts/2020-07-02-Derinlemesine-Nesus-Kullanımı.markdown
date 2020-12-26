@@ -34,6 +34,7 @@ Nesus'un Settings sekmesinde kullanıcı ve sunucu taraflı ayarlamalar yapılı
 
 <br/><br/>
 
+#### **Nesus Ayarları**
 - Settings
     - Settings
         - About
@@ -121,6 +122,7 @@ Nessus'un taramalar sekmesinde yapılan taramaların bulunduğu klasörler ve ta
 
 <br/><br/>
 
+#### **Nessus Tarama İşlemleri**
 - Scans
     - Folders
         - My Scans
