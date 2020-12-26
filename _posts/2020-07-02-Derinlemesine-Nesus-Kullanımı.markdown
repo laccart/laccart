@@ -41,53 +41,53 @@ Nesus'un Settings sekmesinde kullanıcı ve sunucu taraflı ayarlamalar yapılı
 - Accounts
 - My Account
 
-**Settings / Advanced Settings** : Global ayarları manuel olarak yapılandırmamıza izin verir. Nessus servisi veya sunucunun yeniden başlatılması gerekebilir.
+**Settings -> Advanced Settings** : Global ayarları manuel olarak yapılandırmamıza izin verir. Nessus servisi veya sunucunun yeniden başlatılması gerekebilir.
 
 | ![atgr4]({{ site.url }}/assets/img/Nessus/part2/resim4.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
-| *Resim4 : Nesus Settings / Advanced Settings* |
+| *Resim4 : Nesus Settings -> Advanced Settings* |
 
-**Settings / Proxy Server** : HTTP isteklerini iletmek için kullanılır. Nessus eklenti güncelleştirmelerini gerçekleştirmek için uzak tarayıcılarla veya aracılarla iletişim kurmak için kullanır. Ana makine ve bağlantı portu zorunlu olup diğer bilgiler isteğe bağlı olabilir. 
+**Settings -> Proxy Server** : HTTP isteklerini iletmek için kullanılır. Nessus eklenti güncelleştirmelerini gerçekleştirmek için uzak tarayıcılarla veya aracılarla iletişim kurmak için kullanır. Ana makine ve bağlantı portu zorunlu olup diğer bilgiler isteğe bağlı olabilir. 
 
 | ![atgr5]({{ site.url }}/assets/img/Nessus/part2/resim5.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
-| *Resim5 : Nesus Settings / Proxy Server* |
+| *Resim5 : Nesus Settings -> Proxy Server* |
 
-**Settings / Remote Link** : Remote link ayarı etkinleştirilerek tarayıcı Tenable.io veya Nessus Manager ’a bağlanabilir. Taramalar yapılandırılırken veya başlatılırken tamamen yönetilebilir ve seçilebilir. 
+**Settings -> Remote Link** : Remote link ayarı etkinleştirilerek tarayıcı Tenable.io veya Nessus Manager ’a bağlanabilir. Taramalar yapılandırılırken veya başlatılırken tamamen yönetilebilir ve seçilebilir. 
 
 | ![atgr6]({{ site.url }}/assets/img/Nessus/part2/resim6.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
-| *Resim6 : Nesus Settings / Remote Link* |
+| *Resim6 : Nesus Settings -> Remote Link* |
 
-**Settings / SMTP Server** : E-posta almak veya göndermek için bir endüstri standardıdır. SMTP yapılandırıldıktan sonra tarama sonuçları bir taramanın **E-posta Bildirimleri** yapılandırılmasında belirtilen alıcılar listesine gönderilir. Bu sonuçlar filtrelerle özel olarak özelleştirilebilir ve HTML uyumlu e-posta istemcisi gerektirir.
+**Settings -> SMTP Server** : E-posta almak veya göndermek için bir endüstri standardıdır. SMTP yapılandırıldıktan sonra tarama sonuçları bir taramanın *e-posta bildirimleri* yapılandırılmasında belirtilen alıcılar listesine gönderilir. Bu sonuçlar filtrelerle özel olarak özelleştirilebilir ve HTML uyumlu e-posta istemcisi gerektirir.
 
 | ![atgr7]({{ site.url }}/assets/img/Nessus/part2/resim7.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
-| *Resim7 : Nesus Settings / SMTP Server* |
+| *Resim7 : Nesus Settings -> SMTP Server* |
 
-**Settings / Custom CA** : Taramalar sırasında bu eklenti ( SSL Sertifikası ) yanlış bulguları azaltmaya yardımcı olur. 
+**Settings -> Custom CA** : Taramalar sırasında bu eklenti ( SSL Sertifikası ) yanlış bulguları azaltmaya yardımcı olur. 
 
 | ![atgr8]({{ site.url }}/assets/img/Nessus/part2/resim8.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
-| *Resim8 : Nesus Settings / Custom CA* |
+| *Resim8 : Nesus Settings -> Custom CA* |
 
-**Settings / Upgrade Assistant** : Nessus ’u güncelleştirme ve Tenable.io yükseltme işlemi gerçekleştirilir.
+**Settings -> Upgrade Assistant** : Nessus ’u güncelleştirme ve Tenable.io yükseltme işlemi gerçekleştirilir.
 
 | ![atgr9]({{ site.url }}/assets/img/Nessus/part2/resim9.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
-| *Resim9 : Nesus Settings / Upgrade Assistant* |
+| *Resim9 : Nesus Settings -> Upgrade Assistant* |
 
-**Settings / Password Management** : Parolalar için parametreleri ayarlamanıza, oturum açma bildirimlerini açmanıza ve oturum zaman aşımını ayarlamanıza olanak tanır. Giriş bildirimleri, kullanıcının son başarılı giriş - başarısız girişlerinin tarih, saat, IP gibi bilgileri tutar. Başarısız deneme kaydını da tutar.
+**Settings -> Password Management** : Parolalar için parametreleri ayarlamanıza, oturum açma bildirimlerini açmanıza ve oturum zaman aşımını ayarlamanıza olanak tanır. Giriş bildirimleri, kullanıcının son başarılı giriş - başarısız girişlerinin tarih, saat, IP gibi bilgileri tutar. Başarısız deneme kaydını da tutar.
 
 | ![atgr10]({{ site.url }}/assets/img/Nessus/part2/resim10.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
-| *Resim10 : Nesus Settings / Password Management* |
+| *Resim10 : Nesus Settings -> Password Management* |
 
-**Accounts / My Account** : Hesap ayarları ve API Keys bulunmaktadır.
+**Accounts -> My Account** : Hesap ayarları ve API Keys bulunmaktadır.
 
 | ![atgr11]({{ site.url }}/assets/img/Nessus/part2/resim11.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
-| *Resim11 : Nesus Accounts / My Account* |
+| *Resim11 : Nesus Accounts -> My Account* |
 
 Nessus'un taramalar sekmesinde yapılan taramaların bulunduğu klasörler ve tarama yapmak için kullanılan kaynaklar bulunmaktadır. Kaynaklar arasında politikalar, eklentiler, raporların özelleştirilmesi ve taramalar ile ilgili işlemler mevcuttur.
 
@@ -106,47 +106,47 @@ Nessus'un taramalar sekmesinde yapılan taramaların bulunduğu klasörler ve ta
         - Customized Reports
         - Scanners
 
-**Folders / My Scans** : Kullanıcı tarafından yapılan taramalar yer alır. Ayrıca Import, New Folder, New Scan gibi sekmeleri vardır. 
+**Folders -> My Scans** : Kullanıcı tarafından yapılan taramalar yer alır. Ayrıca Import, New Folder, New Scan gibi sekmeleri vardır. 
 
 | ![atgr13]({{ site.url }}/assets/img/Nessus/part2/resim13.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
-| *Resim13 : Nesus Folders / My Scans* |
+| *Resim13 : Nesus Folders -> My Scans* |
 
-**Folders / All Scans** : Bütün taramaları içerisinde barındırır.
+**Folders -> All Scans** : Bütün taramaları içerisinde barındırır.
 
 | ![atgr14]({{ site.url }}/assets/img/Nessus/part2/resim14.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
-| *Resim14 : Nesus Folders / All Scans* |
+| *Resim14 : Nesus Folders -> All Scans* |
 
-**Folders / Trash** : Silinen taramaların gönderildiği çöp kutusu denilebilir.
+**Folders -> Trash** : Silinen taramaların gönderildiği çöp kutusu denilebilir.
 
 | ![atgr15]({{ site.url }}/assets/img/Nessus/part2/resim15.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
-| *Resim15 : Nesus Folders / Trash* |
+| *Resim15 : Nesus Folders -> Trash* |
 
-**Resources / Policies** : Tarama sırasında hangi işlemlerin  gerçekleştirildiğini tanımlayan özel şablonlar oluşturmaya olanak tanır. Bir kez oluşturulduktan şablon, tarama şablonları listesinden seçilebilir. Politikalar görüntülenebilir, oluşturulabilir, içe aktarılabilir, indirilebilir, düzenlenebilir ve silinebilir.
+**Resources -> Policies** : Tarama sırasında hangi işlemlerin  gerçekleştirildiğini tanımlayan özel şablonlar oluşturmaya olanak tanır. Bir kez oluşturulduktan şablon, tarama şablonları listesinden seçilebilir. Politikalar görüntülenebilir, oluşturulabilir, içe aktarılabilir, indirilebilir, düzenlenebilir ve silinebilir.
 
 | ![atgr16]({{ site.url }}/assets/img/Nessus/part2/resim16.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
-| *Resim16 : Nesus Resources / Policies* |
+| *Resim16 : Nesus Resources -> Policies* |
 
-**Resources / Plugin Rules** : Eklenti kuralları, verilen herhangi bir eklentinin önemini gizlemenize veya değiştirmenize izin verir. Ek olarak, kurallar belirli bir ana bilgisayar veya belirli bir zaman dilimi ile sınırlandırılabilir. Kurallar görüntülenebilir, oluşturulabilir, düzenlenebilir ve silinebilir.
+**Resources -> Plugin Rules** : Eklenti kuralları, verilen herhangi bir eklentinin önemini gizlemenize veya değiştirmenize izin verir. Ek olarak, kurallar belirli bir ana bilgisayar veya belirli bir zaman dilimi ile sınırlandırılabilir. Kurallar görüntülenebilir, oluşturulabilir, düzenlenebilir ve silinebilir.
 
 | ![atgr17]({{ site.url }}/assets/img/Nessus/part2/resim17.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
-| *Resim17 : Nesus Resources / Plugin Rules* |
+| *Resim17 : Nesus Resources -> Plugin Rules* |
 
-**Resources / Customized Reports** : Tarama sonuçlarından HTML veya PDF dosyalarını dışarı aktarırken kullanmak için özel bir ad ve logo eklenebilir. Resimler maksimum 10 MB boyutunda olan JPEG, GIF veya PNG formatında olmalı ve saydamlık içermemelidir.
+**Resources -> Customized Reports** : Tarama sonuçlarından HTML veya PDF dosyalarını dışarı aktarırken kullanmak için özel bir ad ve logo eklenebilir. Resimler maksimum 10 MB boyutunda olan JPEG, GIF veya PNG formatında olmalı ve saydamlık içermemelidir.
 
 | ![atgr18]({{ site.url }}/assets/img/Nessus/part2/resim18.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
-| *Resim18 : Nesus Resources / Customized Reports* |
+| *Resim18 : Nesus Resources -> Customized Reports* |
 
-**Resources / Scanners** : Uzak tarayıcılara upgrade linkine tıklayarak bağlanılabilir. Bağlantı kuruldutan sonra taramaları yapılandırırken yerel olarak yönetilebilir ve seçilebilir. Tarayıcının mevcut durumu ve tüm çalışan taramalar kontrol edilebilir.
+**Resources -> Scanners** : Uzak tarayıcılara upgrade linkine tıklayarak bağlanılabilir. Bağlantı kuruldutan sonra taramaları yapılandırırken yerel olarak yönetilebilir ve seçilebilir. Tarayıcının mevcut durumu ve tüm çalışan taramalar kontrol edilebilir.
 
 | ![atgr19]({{ site.url }}/assets/img/Nessus/part2/resim19.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
-| *Resim19 : Nesus Resources / Scanners* |
+| *Resim19 : Nesus Resources -> Scanners* |
 
 ### **Nessus Tarama Politikaları**
 
@@ -156,21 +156,21 @@ Nessus taramalarında, hedef varlıklar kategorize edilerek tarama politikaları
 |:--:|
 | *Resim19 : Nesus Varsayılan Tarama Politikaları* |
 
-**Resources / Policies / New Policy** : Tarama yapılacak varlıklara yönelik yeni tarama politikaları oluşturulabilir. Ayrıca varsayılan politikalar yapılandırılarak yeni politikalar oluşturulabilir.
+**Resources -> Policies -> New Policy** : Tarama yapılacak varlıklara yönelik yeni tarama politikaları oluşturulabilir. Ayrıca varsayılan politikalar yapılandırılarak yeni politikalar oluşturulabilir.
 
-**Resources / Policies / New Policy / Advanced Scan** : Herhangi bir öneri kullanmadan yapılacak tarama yapılandırılabilir. Bu taramada kullanıcı hedef sisteme yönelik network taramaları ve plugin kullanarak zafiyet taramaları gerçekleştirebilir.
+**Resources -> Policies -> New Policy -> Advanced Scan** : Herhangi bir öneri kullanmadan yapılacak tarama yapılandırılabilir. Bu taramada kullanıcı hedef sisteme yönelik network taramaları ve plugin kullanarak zafiyet taramaları gerçekleştirebilir.
 
 | ![atgr20]({{ site.url }}/assets/img/Nessus/part2/resim20.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
-| *Resim20 : Nesus Resources / Policies / New Policy / Advanced Scan* |
+| *Resim20 : Nesus Resources -> Policies -> New Policy -> Advanced Scan* |
 
-**Resources / Policies / New Policy / Audit Cloud Infrastructure** : Third-party bulut hizmetlerinin denetlenmesi için oluşturulan bir politikadır.
+**Resources -> Policies -> New Policy -> Audit Cloud Infrastructure** : Third-party bulut hizmetlerinin denetlenmesi için oluşturulan bir politikadır.
 
 | ![atgr21]({{ site.url }}/assets/img/Nessus/part2/resim21.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
-| *Resim21 : Nesus Resources / Policies / New Policy / Audit Cloud Infrastructure* |
+| *Resim21 : Nesus Resources -> Policies -> New Policy -> Audit Cloud Infrastructure* |
 
-**Resources / Policies / New Policy / BadLock Detection** : CVE-2016-2118 (samba) ve CVE-2016-0128(Microsoft) kodlu güvenlik açıklarının sistemlerde olup olmadığını kontrol eden bır tarama politikasıdır. BadLock zafiyeti, Wiındows 2003, Windows 2000, Windows XP ve samba sunucularını hedef alır.
+**Resources -> Policies -> New Policy -> BadLock Detection** : CVE-2016-2118 (samba) ve CVE-2016-0128(Microsoft) kodlu güvenlik açıklarının sistemlerde olup olmadığını kontrol eden bır tarama politikasıdır. BadLock zafiyeti, Wiındows 2003, Windows 2000, Windows XP ve samba sunucularını hedef alır.
 
 | ![atgr22]({{ site.url }}/assets/img/Nessus/part2/resim22.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
