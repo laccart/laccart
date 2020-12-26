@@ -203,8 +203,6 @@ Microsoft ATA’nın kurulumunu yapmadan önce gereksinimlerinin eksiksiz bir ş
 
 .NET kurulumu sonucunda makineniz otomatik olarak yeniden başlatılabilir. Şekil 6, ATA’nın dil seçim özelliğini göstermektedir.
 
-<br/>
-
 | ![atgr10]({{ site.url }}/assets/img/MicrosoftATA/sekil6.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
 | *Şekil 6 : Kurulum sırasında ATA dil seçme ekranı* |
