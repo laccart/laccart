@@ -14,6 +14,7 @@ thumbnail: posts/nessus.jpg
 |:--:|
 | *Resim1 : Nessus Login Sayfası* |
 
+<br />
 
 Giriş panelinde kullanıcı bilgileri doğru girildiği takdirde ana panele yönlendirilir.
 
@@ -21,7 +22,7 @@ Giriş panelinde kullanıcı bilgileri doğru girildiği takdirde ana panele yö
 |:--:|
 | *Resim2 : Nesus Ana Paneli* |
 
-<br/><br/>
+<br/>
 
 ### **Nessus Sekmelerinde Temel Gezinti**
 
@@ -31,7 +32,7 @@ Nesus'un Settings sekmesinde kullanıcı ve sunucu taraflı ayarlamalar yapılı
 |:--:|
 | *Resim3 : Nesus Settings Ekranı* |
 
-<br/><br/>
+<br/>
 
 #### **Nesus Ayarları**
 
@@ -48,6 +49,8 @@ Nesus'un Settings sekmesinde kullanıcı ve sunucu taraflı ayarlamalar yapılı
 - Accounts
 - My Account
 
+<br />
+
 - **Settings -> Advanced Settings**
 
 Global ayarları manuel olarak yapılandırmamıza izin verir. Nessus servisi veya sunucunun yeniden başlatılması gerekebilir.
@@ -56,6 +59,7 @@ Global ayarları manuel olarak yapılandırmamıza izin verir. Nessus servisi ve
 |:--:|
 | *Resim4 : Nesus Settings -> Advanced Settings* |
 
+<br />
 
 - **Settings -> Proxy Server**
 
@@ -65,6 +69,7 @@ HTTP isteklerini iletmek için kullanılır. Nessus eklenti güncelleştirmeleri
 |:--:|
 | *Resim5 : Nesus Settings -> Proxy Server* |
 
+<br />
 
 - **Settings -> Remote Link**
 
@@ -74,7 +79,7 @@ Remote link ayarı etkinleştirilerek tarayıcı Tenable.io veya Nessus Manager 
 |:--:|
 | *Resim6 : Nesus Settings -> Remote Link* |
 
-
+<br />
 
 - **Settings -> SMTP Server**
 
@@ -84,7 +89,7 @@ E-posta almak veya göndermek için bir endüstri standardıdır. SMTP yapıland
 |:--:|
 | *Resim7 : Nesus Settings -> SMTP Server* |
 
-
+<br />
 
 - **Settings -> Custom CA**
 
@@ -94,6 +99,7 @@ Taramalar sırasında bu eklenti ( SSL Sertifikası ) yanlış bulguları azaltm
 |:--:|
 | *Resim8 : Nesus Settings -> Custom CA* |
 
+<br />
 
 - **Settings -> Upgrade Assistant**
 
@@ -103,7 +109,7 @@ Nessus ’u güncelleştirme ve Tenable.io yükseltme işlemi gerçekleştirilir
 |:--:|
 | *Resim9 : Nesus Settings -> Upgrade Assistant* |
 
-
+<br />
 
 - **Settings -> Password Management**
 
@@ -113,7 +119,7 @@ Parolalar için parametreleri ayarlamanıza, oturum açma bildirimlerini açman�
 |:--:|
 | *Resim10 : Nesus Settings -> Password Management* |
 
-
+<br />
 
 - **Accounts -> My Account**
 
@@ -123,6 +129,7 @@ Hesap ayarları ve API Keys bulunmaktadır.
 |:--:|
 | *Resim11 : Nesus Accounts -> My Account* |
 
+<br />
 
 Nessus'un taramalar sekmesinde yapılan taramaların bulunduğu klasörler ve tarama yapmak için kullanılan kaynaklar bulunmaktadır. Kaynaklar arasında politikalar, eklentiler, raporların özelleştirilmesi ve taramalar ile ilgili işlemler mevcuttur.
 
@@ -130,7 +137,7 @@ Nessus'un taramalar sekmesinde yapılan taramaların bulunduğu klasörler ve ta
 |:--:|
 | *Resim12 : Nesus Tarama işlemleri sekmesi* |
 
-<br/><br/>
+<br/>
 
 #### **Nessus Tarama İşlemleri**
 - Scans
@@ -144,6 +151,7 @@ Nessus'un taramalar sekmesinde yapılan taramaların bulunduğu klasörler ve ta
         - Customized Reports
         - Scanners
 
+<br />
 
 - **Folders -> My Scans**
 
@@ -153,6 +161,7 @@ Kullanıcı tarafından yapılan taramalar yer alır. Ayrıca Import, New Folder
 |:--:|
 | *Resim13 : Nesus Folders -> My Scans* |
 
+<br />
 
 - **Folders -> All Scans**
 
@@ -162,6 +171,7 @@ Bütün taramaları içerisinde barındırır.
 |:--:|
 | *Resim14 : Nesus Folders -> All Scans* |
 
+<br />
 
 - **Folders -> Trash**
 
@@ -171,6 +181,7 @@ Silinen taramaların gönderildiği çöp kutusu denilebilir.
 |:--:|
 | *Resim15 : Nesus Folders -> Trash* |
 
+<br />
 
 - **Resources -> Policies**
 
@@ -180,6 +191,7 @@ Tarama sırasında hangi işlemlerin  gerçekleştirildiğini tanımlayan özel 
 |:--:|
 | *Resim16 : Nesus Resources -> Policies* |
 
+<br />
 
 - **Resources -> Plugin Rules**
 
@@ -189,6 +201,7 @@ Eklenti kuralları, verilen herhangi bir eklentinin önemini gizlemenize veya de
 |:--:|
 | *Resim17 : Nesus Resources -> Plugin Rules* |
 
+<br />
 
 - **Resources -> Customized Reports**
 
@@ -198,6 +211,7 @@ Tarama sonuçlarından HTML veya PDF dosyalarını dışarı aktarırken kullanm
 |:--:|
 | *Resim18 : Nesus Resources -> Customized Reports* |
 
+<br />
 
 - **Resources -> Scanners**
 
@@ -207,7 +221,7 @@ Uzak tarayıcılara upgrade linkine tıklayarak bağlanılabilir. Bağlantı kur
 |:--:|
 | *Resim19 : Nesus Resources -> Scanners* |
 
-<br/><br/>
+<br/>
 
 ### **Nessus Tarama Politikaları**
 
@@ -217,11 +231,13 @@ Nessus taramalarında, hedef varlıklar kategorize edilerek tarama politikaları
 |:--:|
 | *Resim19 : Nesus Varsayılan Tarama Politikaları* |
 
+<br />
 
 - **Resources -> Policies -> New Policy**
 
 Tarama yapılacak varlıklara yönelik yeni tarama politikaları oluşturulabilir. Ayrıca varsayılan politikalar yapılandırılarak yeni politikalar oluşturulabilir.
 
+<br />
 
 - **Resources -> Policies -> New Policy -> Advanced Scan** 
 
@@ -231,6 +247,7 @@ Herhangi bir öneri kullanmadan yapılacak tarama yapılandırılabilir. Bu tara
 |:--:|
 | *Resim20 : Nesus Resources -> Policies -> New Policy -> Advanced Scan* |
 
+<br />
 
 - **Resources -> Policies -> New Policy -> Audit Cloud Infrastructure**
 
@@ -240,6 +257,7 @@ Third-party bulut hizmetlerinin denetlenmesi için oluşturulan bir politikadır
 |:--:|
 | *Resim21 : Nesus Resources -> Policies -> New Policy -> Audit Cloud Infrastructure* |
 
+<br />
 
 - **Resources -> Policies -> New Policy -> BadLock Detection**
 
@@ -249,11 +267,13 @@ CVE-2016-2118 (samba) ve CVE-2016-0128(Microsoft) kodlu güvenlik açıklarını
 |:--:|
 | *Resim22 : MS08-067 ve BADLOCK zafiyetlerinin karşılaştırılması* |
 
+<br />
 
 - **Resources -> Policies -> New Policy -> Bash Shellshock Detection**
 
 CVE-2014-6271 ve CVE-2014-7169 kodlu güvenlik açıklarının sistemlerde olup olmadığını kontrol eden bır tarama politikasıdır. Bu politika, Shellshock güvenlik açığı için HTTP, FTP, SMTP, Telnet ve SIP aracılığıyla uzaktan denetleme yapmak için kullanılır. SSH bilgileri isteğe bağlı olarak CVE-2014-6271 kodlu zafiyetin test edilmesi için kullanılır. Bash Shellshock, birçok Linux/UNIX işletim sisteminde ve Apple’ın Mac OS X’inde kullanılan ortak komut satırı kabuğu olan GNU Bourne-Again Shell(Bash)’da bulunan bir güvenlik açığıdır. Hata, bir saldırganın zararlı kodu ekleyerek işletim sistemi tarafından kullanılan ortam değişkenlerinde kabuk komutlarını uzaktan çalıştırmasına izin verir.
 
+<br />
 
 - **Resources -> Policies -> New Policy -> Basic Network Scan**
 
@@ -263,6 +283,7 @@ Herhangi bir hedef için genel sistem taramasıdır. TCP, ARP, ICMP paketlerini 
 |:--:|
 | *Resim23 : Resources -> Policies -> New Policy -> Basic Network Scan* |
 
+<br />
 
 - **Resources -> Policies -> New Policy -> Credentialed Patch Audit**
 
@@ -272,6 +293,7 @@ Ana makineler için kimlik doğrulaması yapıp eksik güncellemeleri numaraland
 |:--:|
 | *Resim24 : Resources -> Policies -> New Policy -> Credentialed Patch Audit* |
 
+<br />
 
 - **Resources -> Policies -> New Policy -> DROWN Detection**
 
@@ -281,6 +303,8 @@ CVE-2016-0800 kodlu güvenlik açığının sistemlerde olup olmadığını kont
 |:--:|
 | *Resim25 : Resources -> Policies -> New Policy -> DROWN Detection* |
 
+<br />
+
 - **Resources -> Policies -> New Policy -> Host Discovery**
 
 Basit bir keşif taraması sonucu açık hostların ve açık hostlara ait açık portların keşfi yapılır.
@@ -289,6 +313,7 @@ Basit bir keşif taraması sonucu açık hostların ve açık hostlara ait açı
 |:--:|
 | *Resim26 : Resources -> Policies -> New Policy -> Host Discovery* |
 
+<br />
 
 - **Resources -> Policies -> New Policy -> Intel AMT Security Bypass**
 
@@ -298,6 +323,7 @@ CVE-2017-5689 kodlu güvenlik açığının sistemlerde olup olmadığını kont
 |:--:|
 | *Resim27 : Resources -> Policies -> New Policy -> Intel AMT Security Bypass* |
 
+<br />
 
 - **Resources -> Policies -> New Policy -> Internal PCI Network Scan**
 
@@ -307,6 +333,7 @@ Dahili bir PCI DSS güvenlik açığı taraması gerçekleştirir. Bir kurumun k
 |:--:|
 | *Resim28 : Resources -> Policies -> New Policy -> Internal PCI Network Scan* |
 
+<br />
 
 - **Resources -> Policies -> New Policy -> Malware Scan**
 
@@ -316,16 +343,19 @@ Windows ve UNIX sistemler için malware yani zararlı yazılım analizi yapılı
 |:--:|
 | *Resim29 : Resources -> Policies -> New Policy -> Malware Scan* |
 
+<br />
 
 - **Resources -> Policies -> New Policy -> MDM Config Audit**
 
 Mobil Cihazlarını yapılandırılmasını denetler. Kullanımı için Upgrade edilmesi gerekmektedir.
 
+<br />
 
 - **Resources -> Policies -> New Policy -> Mobile Device Scan**
 
 Microsoft Exchange ve mobil cihazların denetiminde kullanılır. Kullanılması için Upgrade edilmesi gerekmektedir.
 
+<br />
 
 - **Resources -> Policies -> New Policy -> Offline Config Audit**
 
@@ -335,6 +365,8 @@ Offline olarak ağ cihazlarının yapılandırılmasını denetlemektedir.
 |:--:|
 | *Resim30 : Resources -> Policies -> New Policy -> Offline Config Audit* |
 
+<br />
+
 - **Resources -> Policies -> New Policy -> PCI Quarterly External Scan**
 
 PCI tarafından gerektiği gibi harici tarama için onaylanmıştır. (Unofficial)
@@ -343,6 +375,7 @@ PCI tarafından gerektiği gibi harici tarama için onaylanmıştır. (Unofficia
 |:--:|
 | *Resim31 : Resources -> Policies -> New Policy -> PCI Quarterly External Scan* |
 
+<br />
 
 - **Resources -> Policies -> New Policy -> Policy Compliance Auditing**
 
@@ -352,6 +385,8 @@ Bilinen bir temel çizgiye karşı denetim sistemi yapılandırmalarıdır.
 |:--:|
 | *Resim32 : Resources -> Policies -> New Policy -> Policy Compliance Auditing* |
 
+<br />
+
 - **Resources -> Policies -> New Policy -> SCAP and OVAL Auditing** 
 
 SCAP ve OVAL tanımlarını kullanan denetim sistemlerine yönelik taramadır. The Security Content Automation Protocol (SCAP), bir kuruluşta dağıtılan sistemlerin otomatik güvenlik açığı yönetimi, ölçümü ve politika uyumluluğu değerlendirmesini etkinleştirmek için belirli standartların kullanılması için bir yöntemdir.
@@ -359,6 +394,8 @@ SCAP ve OVAL tanımlarını kullanan denetim sistemlerine yönelik taramadır. T
 | ![atgr33]({{ site.url }}/assets/img/Nessus/part2/resim33.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
 | *Resim33 : Resources -> Policies -> New Policy -> SCAP and OVAL Auditing* |
+
+<br />
 
 - **Resources -> Policies -> New Policy -> Shadow Brokers Scan**
 
@@ -368,6 +405,7 @@ Shadow Brokers tarafından bulunan zafiyetlerin taranmasını sağlayan bir tara
 |:--:|
 | *Resim34 : Resources -> Policies -> New Policy -> Shadow Brokers Scan* |
 
+<br />
 
 - **Resources -> Policies -> New Policy -> Spectre and Meltdown**
 
@@ -382,7 +420,7 @@ MS17-010 güvenlik açığının sistemlerde olup olmadığını kontrol eden b�
 |:--:|
 | *Resim35 : Resources -> Policies -> New Policy -> WannaCry Ransomware* |
 
-<br/><br/>
+<br/>
 
 - **Resources -> Policies -> New Policy -> Web Application Tests**
 
@@ -392,116 +430,116 @@ Web tabanlı uygulamalarda bulunabilecek güvenlik açıklarına yönelik oluşt
 |:--:|
 | *Resim36 : Resources -> Policies -> New Policy -> Web Application Tests* |
 
-<br/><br/>
+<br/>
 
 ### **Nessus Kullanımı**
 
-<br/><br/>
+<br/>
 
 | ![atgr37]({{ site.url }}/assets/img/Nessus/part2/resim37.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
 | **Adım1** |
 
-<br/><br/>
+<br/>
 
 
 | ![atgr38]({{ site.url }}/assets/img/Nessus/part2/resim38.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
 | **Adım2** |
 
-<br/><br/>
+<br/>
 
 
 | ![atgr39]({{ site.url }}/assets/img/Nessus/part2/resim39.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
 | **Adım3** |
 
-<br/><br/>
+<br/>
 
 
 | ![atgr40]({{ site.url }}/assets/img/Nessus/part2/resim40.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
 | **Adım4** |
 
-<br/><br/>
+<br/>
 
 
 | ![atgr41]({{ site.url }}/assets/img/Nessus/part2/resim41.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
 | **Adım5** |
 
-<br/><br/>
+<br/>
 
 | ![atgr42]({{ site.url }}/assets/img/Nessus/part2/resim42.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
 | **Adım6** |
 
-<br/><br/>
+<br/>
 
 
 | ![atgr43]({{ site.url }}/assets/img/Nessus/part2/resim43.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
 | **Adım7** |
 
-<br/><br/>
+<br/>
 
 
 | ![atgr44]({{ site.url }}/assets/img/Nessus/part2/resim44.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
 | **Adım8** |
 
-<br/><br/>
+<br/>
 
 | ![atgr45]({{ site.url }}/assets/img/Nessus/part2/resim45.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
 | **Adım9** |
 
-<br/><br/>
+<br/>
 
 
 | ![atgr46]({{ site.url }}/assets/img/Nessus/part2/resim46.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
 | **Adım10** |
 
-<br/><br/>
+<br/>
 
 | ![atgr47]({{ site.url }}/assets/img/Nessus/part2/resim47.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
 | **Adım11** |
 
-<br/><br/>
+<br/>
 
 | ![atgr48]({{ site.url }}/assets/img/Nessus/part2/resim48.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
 | **Adım12** |
 
-<br/><br/>
+<br/>
 
 | ![atgr49]({{ site.url }}/assets/img/Nessus/part2/resim49.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
 | **Adım13** |
 
-<br/><br/>
+<br/>
 
 
 | ![atgr50]({{ site.url }}/assets/img/Nessus/part2/resim50.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
 | **Adım14** |
 
-<br/><br/>
+<br/>
 
 | [atgr51]({{ site.url }}/assets/img/Nessus/part2/resim51.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
 | **Adım15** |
 
-<br/><br/>
+<br/>
 
 
 | ![atgr52]({{ site.url }}/assets/img/Nessus/part2/resim52.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
 | **Adım16** |
 
-<br/><br/>
+<br/>
 
 
 | ![atgr53]({{ site.url }}/assets/img/Nessus/part2/resim53.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
