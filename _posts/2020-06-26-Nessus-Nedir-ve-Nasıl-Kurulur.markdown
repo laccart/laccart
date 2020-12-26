@@ -150,7 +150,7 @@ Plugin otomatik güncelleştirmelerini görmek için:
     - Ayrıca dosyada **auto-update-delay=24** değeri varsayılan 24 süreyle olan güncelleştirmeyi gösterir.
 
 ## **Nessus İndirmek**
-**https://www.tenable.com/downloads/nessus** adresinden işletim sistemi bilgisine göre indirilebilir.
+- **https://www.tenable.com/downloads/nessus** adresinden işletim sistemi bilgisine göre indirilebilir.
 
 ### **Nessus Linux Kurulumu**
 
@@ -174,20 +174,21 @@ Kurulum İçin:
 |:--:|
 | *Resim1 : Kurulum dosyasının indirilmesi* |
 
-
+<br/>
 
 **Adım2 :** Dosya kurulumu başlatılır. Kurulum dosyalarının sisteme yüklenmesinden sonra kurulum web arayüzünde devam eder.
 
 ```linux
 root@Stormer:~# dpkg -i Nessus-7.1.0-debian6_amd64.deb
 ```
+<br/>
 
 **Adım3 :** Web arayüzünden devam edebilmek için Nesus servisinin başlatılması gerekir.
 
 ```linux
 root@Stormer:~# systemctl start nessusd.service
 ```
-
+<br/>
 
 **Adım4 :** Kullanıcı hesabı oluşturmak için bir kullanıcı adı ve parola oluşturulması gerekir.
 
@@ -195,6 +196,7 @@ root@Stormer:~# systemctl start nessusd.service
 |:--:|
 | *Resim2 : Kullanıcı hesabı oluşturma ekranı* |
 
+<br/>
 
 **Adım5 :** Kullanıcı hesabının oluşturulmasından sonra Lisans anahtarının girilmesi gerekir.
 
@@ -202,11 +204,15 @@ root@Stormer:~# systemctl start nessusd.service
 |:--:|
 | *Resim3 : Lisans anahtarının girilmesi* |
 
+<br/>
+
 **Adım6 :** Giriş yapıldıktan sonra Nesus tarama paneli görüntülenir.
 
 | ![atgr4]({{ site.url }}/assets/img/Nessus/part1/adim11.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
 | *Resim4 : Nessus Tarama paneli* |
+
+<br/>
 
 ### **Nesus Windows Kurulumu**
 
@@ -215,6 +221,8 @@ root@Stormer:~# systemctl start nessusd.service
 | ![atgr5]({{ site.url }}/assets/img/Nessus/part1/Resim2.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
 | *Resim5 : Nessus Windows Kurulumu* |
+
+<br/>
 
 ### **Nesus Mac OSX Kurulumu**
 
