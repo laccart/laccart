@@ -528,7 +528,7 @@ Web tabanlı uygulamalarda bulunabilecek güvenlik açıklarına yönelik oluşt
 
 <br/>
 
-| [atgr51]({{ site.url }}/assets/img/Nessus/part2/resim51.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
+| ![atgr51]({{ site.url }}/assets/img/Nessus/part2/resim51.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
 | **Adım15** |
 
