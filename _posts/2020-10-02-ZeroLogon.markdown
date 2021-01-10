@@ -42,7 +42,7 @@ Resim1’de, ADZero aracının sadece Domain Controller makinesinin IP adresine 
 
 <br/>
 
-Resim2’de, yapılan SMB Login isteğine gelen yanıtın içerisinden, Domain Controller makinesinin adı ve domain adı elde edilir. Domain Controller makinesinin adı, IP adresi ve DC makinesi adının sonuna ‘$’ sembolünün eklenmesiyle oluşturulan DC bilgisayar hesabı kullanılarak exploit modülü çalıştırılır. Resim3’te, ADZero aracı 172.16.5.105 IP adresine yönelik çalıştırılmıştır.
+Resim2’de, yapılan SMB Login isteğine gelen yanıtın içerisinden, Domain Controller makinesinin adı ve domain adı elde edilir. Domain Controller makinesinin adı, IP adresi ve DC makinesi adının sonuna **$** sembolünün eklenmesiyle oluşturulan DC bilgisayar hesabı kullanılarak exploit modülü çalıştırılır. Resim3’te, ADZero aracı 172.16.5.105 IP adresine yönelik çalıştırılmıştır.
 
 ```linux
 root@Stormer:~# python3 ADZero.py 172.16.5.105
@@ -54,9 +54,9 @@ root@Stormer:~# python3 ADZero.py 172.16.5.105
 
 <br/>
 
-Resim3’te, 172.16.5.105 IP adresine yönelik yapılan Zerologon saldırısının başarılı bir şekilde gerçekleştirildiği gösterilmektedir. Böylece, Domain Controller bilgisayar hesabının parolası boş string değer olarak atanır. (NT hash = 31d6cfe0d16ae931b73c59d7e0c089c0).
+Resim3’te, 172.16.5.105 IP adresine yönelik yapılan Zerologon saldırısının başarılı bir şekilde gerçekleştirildiği gösterilmektedir. Böylece, Domain Controller bilgisayar hesabının parolası boş string değer olarak atanır. (NT hash = **31d6cfe0d16ae931b73c59d7e0c089c0**).
 
-Domain Controller bilgisayar hesabının parolası boş string değer olarak atandıktan sonra, Impacket modüllerinden secretdump.py modülü kullanılarak Administrator kullanıcısının LM:NTLM hash bilgisi out adlı bir dosyaya kaydedilir. Impacket modüllerinden smbexec.py modülü kullanılarak Administrator kullanıcısının LM:NTLM hash bilgisiyle Domain Controller makinesinden shell elde edilir. LM:NTLM hash bilgisi kullanılarak hedef makinede oturum elde etme tekniğine Pass-the-Hash denir. Resim4’te shell oturumu gösterilmektedir.
+Domain Controller bilgisayar hesabının parolası boş string değer olarak atandıktan sonra, Impacket modüllerinden secretdump.py modülü kullanılarak Administrator kullanıcısının LM:NTLM hash bilgisi out adlı bir dosyaya kaydedilir. Impacket modüllerinden smbexec.py modülü kullanılarak Administrator kullanıcısının LM:NTLM hash bilgisiyle Domain Controller makinesinden shell elde edilir. LM:NTLM hash bilgisi kullanılarak hedef makinede oturum elde etme tekniğine **Pass-the-Hash** denir. Resim4’te shell oturumu gösterilmektedir.
 
 | ![atgr4]({{ site.url }}/assets/img/ZeroLogon/resim4.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
@@ -80,7 +80,7 @@ Resim5’te out dosyasının içerisindeki Administrator kullanıcısına ait LM
 
 <br/>
 
-Resim6’da elde edilen LM:NTLM hash bilgisinin, Metasploit Framework içerisindeki ‘exploit/windows/smb/psexec’ exploit modülünde kullanıldığı gösterilmektedir. Exploit modülünün çalıştırılmasıyla meterpreter oturumu elde edilir. Resim7’de, exploit modülünün çalıştırılması ve meterpreter oturumunun elde edilmesi gösterilmektedir.
+Resim6’da elde edilen LM:NTLM hash bilgisinin, Metasploit Framework içerisindeki **exploit/windows/smb/psexec** exploit modülünde kullanıldığı gösterilmektedir. Exploit modülünün çalıştırılmasıyla meterpreter oturumu elde edilir. Resim7’de, exploit modülünün çalıştırılması ve meterpreter oturumunun elde edilmesi gösterilmektedir.
 
 | ![atgr7]({{ site.url }}/assets/img/ZeroLogon/resim7.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
@@ -88,6 +88,6 @@ Resim6’da elde edilen LM:NTLM hash bilgisinin, Metasploit Framework içerisind
 
 <br/>
 
-Resim7’de meterpreter oturumunun NT AUTHORITY\SYSTEM yetkileriyle elde edildiği gösterilmektedir. Geliştirilen ADZero aracı, Privia Security github hesabından indirilebilir.
+Resim7’de meterpreter oturumunun NT AUTHORITY\SYSTEM yetkileriyle elde edildiği gösterilmektedir. Geliştirilen ADZero aracı, **Privia Security github hesabı**ndan indirilebilir.
 
 
