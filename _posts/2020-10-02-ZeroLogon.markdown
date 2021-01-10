@@ -32,17 +32,15 @@ root@Stormer:~# python3 ADZero.py -h
 |:--:|
 | *Resim1: ADZero aracının kullanım talimatları* |
 
+<br/>
 
-
-
-Resim1’de, ADZero aracının sadece Domain Controller makinesinin IP adresine ihtiyaç duyduğu gösterilmektedir. Yayınlanan Zerologon exploit modülü kullanıcıdan IP adresi, DC adı ve DC’deki bilgisayar hesabı bilgisini istemektedir.
-
-ADZero aracı, aldığı IP adresi ile Domain Controller makinesine bir SMB Login isteğinde bulunmaktadır. SMB Login isteğine dair kodlar, Resim2’de yer almaktadır.
+Resim1’de, ADZero aracının sadece Domain Controller makinesinin IP adresine ihtiyaç duyduğu gösterilmektedir. Yayınlanan Zerologon exploit modülü kullanıcıdan IP adresi, DC adı ve DC’deki bilgisayar hesabı bilgisini istemektedir. ADZero aracı, aldığı IP adresi ile Domain Controller makinesine bir SMB Login isteğinde bulunmaktadır. SMB Login isteğine dair kodlar, Resim2’de yer almaktadır.
 
 | ![atgr2]({{ site.url }}/assets/img/ZeroLogon/resim2.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
 | *Resim2: SMB Login isteği yapılması* |
 
+<br/>
 
 Resim2’de, yapılan SMB Login isteğine gelen yanıtın içerisinden, Domain Controller makinesinin adı ve domain adı elde edilir. Domain Controller makinesinin adı, IP adresi ve DC makinesi adının sonuna ‘$’ sembolünün eklenmesiyle oluşturulan DC bilgisayar hesabı kullanılarak exploit modülü çalıştırılır. Resim3’te, ADZero aracı 172.16.5.105 IP adresine yönelik çalıştırılmıştır.
 
@@ -54,6 +52,7 @@ root@Stormer:~# python3 ADZero.py 172.16.5.105
 |:--:|
 | *Resim3: Zerologon güvenlik açığının başarılı bir şekilde sömürülmesi* |
 
+<br/>
 
 Resim3’te, 172.16.5.105 IP adresine yönelik yapılan Zerologon saldırısının başarılı bir şekilde gerçekleştirildiği gösterilmektedir. Böylece, Domain Controller bilgisayar hesabının parolası boş string değer olarak atanır. (NT hash = 31d6cfe0d16ae931b73c59d7e0c089c0).
 
@@ -63,34 +62,31 @@ Domain Controller bilgisayar hesabının parolası boş string değer olarak ata
 |:--:|
 | *Resim4: ZEROLOGON-DC makinesinden shell oturumunun elde edilmesi* |
 
-Resim4’te shell oturumunun NT AUTHORITY\SYSTEM yetkileriyle elde edildiği gösterilmektedir.
+<br/>
 
-Ayrıca, ADZero aracı kullanılarak elde edilen out adlı dosya içerisindeki LM:NTLM hash değeri kullanılarak meterpreter oturumu elde edilebilir.
-
-Resim5’te out dosyasının içeriği cat komutu kullanılarak görüntülenmiştir.
+Resim4’te shell oturumunun NT AUTHORITY\SYSTEM yetkileriyle elde edildiği gösterilmektedir. Ayrıca, ADZero aracı kullanılarak elde edilen out adlı dosya içerisindeki LM:NTLM hash değeri kullanılarak meterpreter oturumu elde edilebilir. Resim5’te out dosyasının içeriği cat komutu kullanılarak görüntülenmiştir.
 
 | ![atgr5]({{ site.url }}/assets/img/ZeroLogon/resim5.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
 | *Resim5: Administrator kullanıcısının LM:NTLM hash bilgisi* |
 
+<br/>
 
-Resim5’te out dosyasının içerisindeki Administrator kullanıcısına ait LM:NTLM hash bilgisi gösterilmektedir. Metasploit Framework aracı içerisindeki psexec exploit modülü kullanılarak Domain Controller makinesinde meterpreter oturumu elde edilebilir.
-
-Resim6’da psexec modülünün kullanımı gösterilmektedir.
+Resim5’te out dosyasının içerisindeki Administrator kullanıcısına ait LM:NTLM hash bilgisi gösterilmektedir. Metasploit Framework aracı içerisindeki psexec exploit modülü kullanılarak Domain Controller makinesinde meterpreter oturumu elde edilebilir. Resim6’da psexec modülünün kullanımı gösterilmektedir.
 
 | ![atgr6]({{ site.url }}/assets/img/ZeroLogon/resim6.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
 | *Resim6: Psexec exploit modülünün kullanılması* |
 
+<br/>
 
-Resim6’da elde edilen LM:NTLM hash bilgisinin, Metasploit Framework içerisindeki ‘exploit/windows/smb/psexec’ exploit modülünde kullanıldığı gösterilmektedir. Exploit modülünün çalıştırılmasıyla meterpreter oturumu elde edilir.
-
-Resim7’de, exploit modülünün çalıştırılması ve meterpreter oturumunun elde edilmesi gösterilmektedir.
+Resim6’da elde edilen LM:NTLM hash bilgisinin, Metasploit Framework içerisindeki ‘exploit/windows/smb/psexec’ exploit modülünde kullanıldığı gösterilmektedir. Exploit modülünün çalıştırılmasıyla meterpreter oturumu elde edilir. Resim7’de, exploit modülünün çalıştırılması ve meterpreter oturumunun elde edilmesi gösterilmektedir.
 
 | ![atgr7]({{ site.url }}/assets/img/ZeroLogon/resim7.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
 | *Resim7: Exploit modülünün çalıştırılması ve Meterpreter oturumunun elde edilmesi* |
 
+<br/>
 
 Resim7’de meterpreter oturumunun NT AUTHORITY\SYSTEM yetkileriyle elde edildiği gösterilmektedir. Geliştirilen ADZero aracı, Privia Security github hesabından indirilebilir.
 
