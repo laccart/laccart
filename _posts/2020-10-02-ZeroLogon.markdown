@@ -4,7 +4,6 @@ date:   2020-10-02
 layout: post
 categories: 
     - sistem-guvenligi
-    - network-guvenligi
 thumbnail: posts/zerologon.png
 ---
 
