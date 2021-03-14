@@ -93,7 +93,7 @@ Resim6’da, **ipconfig /all** komutu kullanılarak, Ethernet0 arabirimindeki IP
 
 <br/>
 
-Resim7’de “static.bat” adlı batch dosyası çalıştırılarak bilgisayardaki IP ve DNS bilgileri statik olarak değiştirilmiştir. Bilgilerin değiştirildiğini doğrulamak için **ipconfig /all** komutu çalıştırılır. Böylece IP adresinin statik olarak değiştirildiği **DHCP Enabled** parametre değerinin **No** olmasından anlaşılmaktadır. Ayrıca, **static.bat** dosyasında atanan IP ve DNS bilgilerinin başarılı bir şekilde atandığı gösterilmektedir.
+Resim7’de **static.bat** adlı batch dosyası çalıştırılarak bilgisayardaki IP ve DNS bilgileri statik olarak değiştirilmiştir. Bilgilerin değiştirildiğini doğrulamak için **ipconfig /all** komutu çalıştırılır. Böylece IP adresinin statik olarak değiştirildiği **DHCP Enabled** parametre değerinin **No** olmasından anlaşılmaktadır. Ayrıca, **static.bat** dosyasında atanan IP ve DNS bilgilerinin başarılı bir şekilde atandığı gösterilmektedir.
 
 
 
