@@ -11,9 +11,9 @@ thumbnail: posts/netsh.png
 
 **Network Shell (netsh), çalışan bir bilgisayarın ağ yapılandırmasını görüntülemeye veya değiştirmeye olanak sağlayan bir komut satırı yardımcı programıdır. Uzak bağlantılı bilgisayarlar veya yerel bilgisayar netsh komutları kullanılarak yapılandırılabilir. Netsh ile arşivleme veya bir bilgisayarı yapılandırmaya yardımcı olmak amacıyla bir metin dosyasına yapılandırma scriptleri kaydedilebilir. Netsh ayrıca, bir grup komutunun batch modda çalıştırılmasına izin veren scripting özelliği sağlamaktadır.**
 
-Netsh komutları, Microsoft Management Console (MMC) ek bileşenini kullanım işlevselliğini sağlamaktadır. NPS MMC bileşenini veya ``netsh nps`` komutu kullanılarak Network Policy Server (NPS) yapılandırılabilir. Ayrıca, IPv6, Network Bridge ve Remote Procedure Call (RPC) gibi ağ teknolojileri için Windows Server’da MMC bileşeni olarak bulunmayan netsh komutları bulunmaktadır.
+Netsh komutları, Microsoft Management Console (MMC) ek bileşenini kullanım işlevselliğini sağlamaktadır. NPS MMC bileşenini veya **netsh nps** komutu kullanılarak **Network Policy Server (NPS)** yapılandırılabilir. Ayrıca, IPv6, Network Bridge ve Remote Procedure Call (RPC) gibi ağ teknolojileri için Windows Server’da MMC bileşeni olarak bulunmayan netsh komutları bulunmaktadır.
 
-Netsh, DLL dosyalarını kullanarak diğer işletim sistemi bileşenleriyle etkileşim kurabilir. Her Netsh Helper DLL’i, bir ağ sunucusu rolüne veya özelliğine özgü bir komut grubu olan, bağlam (context) adı verilen kapsamlı bir özellik kümesi sağlamaktadır. Bu bağlamlar, bir veya birden fazla servis, yardımcı program veya protokol için yapılandırma ve izleme desteği sağlayarak netsh işlevlerini arttırmaktadır. Örneğin, Dhcpmon.dll dosyası, netsh’a DHCP sunucularını yapılandırma ve yönetme için gerekli olan komutları ve içeriği sağlar.
+Netsh, DLL dosyalarını kullanarak diğer işletim sistemi bileşenleriyle etkileşim kurabilir. Her Netsh Helper DLL’i, bir ağ sunucusu rolüne veya özelliğine özgü bir komut grubu olan, bağlam (context) adı verilen kapsamlı bir özellik kümesi sağlamaktadır. Bu bağlamlar, bir veya birden fazla servis, yardımcı program veya protokol için yapılandırma ve izleme desteği sağlayarak netsh işlevlerini arttırmaktadır. Örneğin, **Dhcpmon.dll dosyası**, netsh’a DHCP sunucularını yapılandırma ve yönetme için gerekli olan komutları ve içeriği sağlar.
 
 ### Netsh Komutunun Kullanımı
 
@@ -26,7 +26,7 @@ Netsh komutunu, Windows Powershell ortamında çalıştırarak Netsh komut satı
 
 <br/>
 
-Resim1’de, ``netsh`` komut satırında ``/?`` komutu kullanılarak netsh içerisindeki bağlamlar gösterilir. Netsh bağlamları, hem komutları hem de alt bağlamlar adı verilen ek bağlamları içermektedir. Bağlamların hakkında bilgi ve detayların görüntülenmesi Resim2’de gösterilmektedir.
+Resim1’de, **netsh** komut satırında **/?** komutu kullanılarak netsh içerisindeki bağlamlar gösterilir. Netsh bağlamları, hem komutları hem de alt bağlamlar adı verilen ek bağlamları içermektedir. Bağlamların hakkında bilgi ve detayların görüntülenmesi Resim2’de gösterilmektedir.
 
 | ![atgr2]({{ site.url }}/assets/img/Netsh/resim2.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
@@ -55,7 +55,7 @@ Command Prompt ve Windows Powershell ekranında netsh komutunun parametre kullan
 
 <br/>
 
-Resim4’te netsh komutunun doğru kullanımı için söz dizimi gösterilmektedir. ``netsh -h`` komutu kullanılarak, netsh komutu hakkında bilgi ve kullanımı hakkında bilgi alınabilir.
+Resim4’te netsh komutunun doğru kullanımı için söz dizimi gösterilmektedir. **netsh -h** komutu kullanılarak, netsh komutu hakkında bilgi ve kullanımı hakkında bilgi alınabilir.
 
 **-a** parametresi isteğe bağlı bir parametredir. Birden fazla netsh komutunun içerisinde bulunduğu scriptlerin çalıştırılmasından sonra netsh komut satırına döndürüleceğini belirtir. AliasFile, birden fazla netsh komutunu içeren scriptler olarak ifade edilmektedir. **–c** parametresi, netsh bağlamlarının belirtilmesi için kullanılır. Kullanılacak bağlam **–c** parametresine atanır.
 
@@ -85,7 +85,7 @@ Batch dosyası oluşturulduktan sonra çalıştırılacak sistemin Ethernet0 ara
 
 <br/>
 
-Resim6’da, ``ipconfig /all`` komutu kullanılarak, Ethernet0 arabirimindeki IP ve DNS bilgilerinin dinamik olarak atandığı gösterilmektedir. **DHCP Enabled** parametresi değerinin **Yes** olması IP ve DNS bilgilerinin dinamik olarak atandığı anlamına gelmektedir. DHCP sunucusunun Default Gateway, DNS Servers ve **Primary WINS Server** IP adresini 192.168.40.2 olarak atadığı gösterilmektedir. Resim7’de ise oluşturulan batch dosyasının çalıştırılmasıyla IP ve DNS sunucusunun bilgileri statik olarak atanmaktadır.
+Resim6’da, **ipconfig /all** komutu kullanılarak, Ethernet0 arabirimindeki IP ve DNS bilgilerinin dinamik olarak atandığı gösterilmektedir. **DHCP Enabled** parametresi değerinin **Yes** olması IP ve DNS bilgilerinin dinamik olarak atandığı anlamına gelmektedir. DHCP sunucusunun Default Gateway, DNS Servers ve **Primary WINS Server** IP adresini 192.168.40.2 olarak atadığı gösterilmektedir. Resim7’de ise oluşturulan batch dosyasının çalıştırılmasıyla IP ve DNS sunucusunun bilgileri statik olarak atanmaktadır.
 
 | ![atgr7]({{ site.url }}/assets/img/Netsh/resim7.png){: style="display: block; margin-left: auto; margin-right: auto; width: 100% "} |
 |:--:|
@@ -93,7 +93,7 @@ Resim6’da, ``ipconfig /all`` komutu kullanılarak, Ethernet0 arabirimindeki IP
 
 <br/>
 
-Resim7’de “static.bat” adlı batch dosyası çalıştırılarak bilgisayardaki IP ve DNS bilgileri statik olarak değiştirilmiştir. Bilgilerin değiştirildiğini doğrulamak için ``ipconfig /all`` komutu çalıştırılır. Böylece IP adresinin statik olarak değiştirildiği **DHCP Enabled** parametre değerinin **No** olmasından anlaşılmaktadır. Ayrıca, **static.bat** dosyasında atanan IP ve DNS bilgilerinin başarılı bir şekilde atandığı gösterilmektedir.
+Resim7’de “static.bat” adlı batch dosyası çalıştırılarak bilgisayardaki IP ve DNS bilgileri statik olarak değiştirilmiştir. Bilgilerin değiştirildiğini doğrulamak için **ipconfig /all** komutu çalıştırılır. Böylece IP adresinin statik olarak değiştirildiği **DHCP Enabled** parametre değerinin **No** olmasından anlaşılmaktadır. Ayrıca, **static.bat** dosyasında atanan IP ve DNS bilgilerinin başarılı bir şekilde atandığı gösterilmektedir.
 
 
 
