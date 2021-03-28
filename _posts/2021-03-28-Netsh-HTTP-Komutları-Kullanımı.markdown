@@ -93,7 +93,7 @@ Resim6'da 3 farklı örnek kullanımı gösterilmektedir. Belirtilen ipport, cer
 
 <br/>
 
-Resim7'de **timeouttype** parametresine **idlecoonectiontimeout | headerwaittimeout** değerlerinden **idleconnectiontimeout** değeri atanmıştır. **value** parametresine ise, timeout süresi olarak **120** atanmıştır. Timeout süresi hexadecimal olarak da atanabilir. Ancak, atanan değerin başına **0x** öneki eklenmelidir.
+Resim7'de **timeouttype** parametresine **idlecoonectiontimeout / headerwaittimeout** değerlerinden **idleconnectiontimeout** değeri atanmıştır. **value** parametresine ise, timeout süresi olarak **120** atanmıştır. Timeout süresi hexadecimal olarak da atanabilir. Ancak, atanan değerin başına **0x** öneki eklenmelidir.
 
 **show timeout :** HTTP servisi için eklenen zaman aşımı süresini saniye cinsinden görüntülemek için netsh komut satırında “http show timeout” komutu kullanılabilir. Örnek gösterimi Resim 8'de gösterilmektedir.
 
