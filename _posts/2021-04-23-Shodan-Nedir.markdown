@@ -1,5 +1,5 @@
 ---
-title:  "Shodan Nedir? Nasıl Kullanılır?"
+title:  "Shodan Nedir?"
 date:   2021-04-23
 layout: post
 categories: 
@@ -29,7 +29,7 @@ Shodan uygulamasını kullanmak isteyen her kulllanıcı **https://shodan.io** a
 **Shodan**, kullanıcıların daha kolay ve verimli pasif keşif yapması için belirli bir **cheatsheet** oluşturmuştur. Oluşturulan cheatsheet’e göre shodan tarafından tanımlanan parametreler kullanılarak pasif keşif işlemleri yapılabilir. Belirtilen cheatsheet’teki temel parametrelerin kullanımı aşağıda gösterilmektedir.
 
 
-### Shodan Temel Parametreleri
+### Shodan CheatSheet
 
 **Server:** HTTP Request header’ındaki **Server header bilgisi** olarak ifade edilebilir. Bu parametre’ye herhangi bir sunucu bilgisi verilerek o sunucu hakkında pasif keşif yapılabilir. Örnek olarak zafiyet barındıran bir server bilgisi girilerek pasif keşif yapılabilir. Resim3’te, **server** parametresi kullanılarak yapılan bir pasif keşif  çalışması gösterilmektedir.
 
